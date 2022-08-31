@@ -1,6 +1,6 @@
 {
-  "homepage":"http://eric6cho.github.io/resume-portfolio",
-  "name": "resume-portfolio",
+  "homepage":"http://eric6cho.github.io/resume",
+  "name": "resume",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
