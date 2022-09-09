@@ -1,0 +1,20 @@
+@import "mixins/mixins.scss";
+
+#Home{
+  min-height:calc(100vh - 200px);
+  padding: 100px 100px;
+}
+
+.home-section{
+  display:flex;
+  width:100%;
+
+  .description-section{
+    text-align: right;
+    margin: 3px auto 0 70px;
+  
+    p{
+      margin-bottom: 5px;
+    }
+  }
+}

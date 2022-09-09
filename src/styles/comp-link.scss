@@ -1,0 +1,80 @@
+@import "mixins/mixins.scss";
+
+.link{
+  @include transition();
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  letter-spacing: 1px;
+  color:var(--black);
+  font-family: Montserrat, sans-serif;
+
+  .icon{
+    @include transition();
+    margin-right:5px;
+    margin-bottom:2px;
+  
+    &.material-icons{
+      color:var(--black);
+      font-size: 16px;
+    }
+
+    &.image-icons{
+      width:16px;
+      height:16px;
+    }
+  }
+
+  &.white{
+    color:var(--white);
+
+    .icon{
+      &.material-icons{
+        color:var(--white);
+      }
+
+      &.image-icons{
+        filter: invert(100%) sepia(96%) saturate(11%) hue-rotate(142deg) brightness(105%) contrast(100%);
+      }
+    }
+  }
+
+  &.button{
+    justify-content: flex-start;
+    padding: 25px 50px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: center;
+
+    &:hover{
+      background:var(--green);
+      color:var(--black);
+      
+      .icon{
+        &.material-icons{
+          color:var(--black);
+        }
+  
+        &.image-icons{
+          filter: invert(0);
+        }
+      }
+    }
+  }
+
+  &:hover{
+    color:var(--green);
+    
+    .icon{
+      &.material-icons{
+        color:var(--green);
+      }
+
+      &.image-icons{
+        filter: invert(89%) sepia(92%) saturate(560%) hue-rotate(86deg) brightness(85%) contrast(103%);
+      }
+    }
+  }
+}

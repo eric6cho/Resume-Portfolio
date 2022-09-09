@@ -1,0 +1,31 @@
+@import "mixins/mixins.scss";
+
+.section{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 100px 200px;
+  margin-bottom: 100px;
+
+  .section-header{
+    display:flex;
+    align-items: center;
+    margin-bottom: 50px;
+  
+    .material-icons{
+      margin: 0 10px 0 5px;
+      font-size: 35px;
+    }
+  }
+
+  .subsection{
+    @include transition();
+    width:100%;
+    margin-bottom: 50px;
+    padding:10px;
+            
+    &:hover{
+      box-shadow: var(--shadow);
+    } 
+  }
+}

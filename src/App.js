@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import Nav from './components/comp-nav';
+import Section from './components/comp-section';
+
+import { pageData,navData } from "./data";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+  const getComponent = () => {
+
+    let component = (
+      <div className="App">        
+        {<Nav data={navData}/>}
+        <div className="overlay">
+          <div className="overlay-shadow">
+            <div className="overlay-border">
+              {<Section data={pageData['sections']['home']}/>}
+              {<Section data={pageData['sections']['about']}/>}
+              {<Section data={pageData['sections']['education']}/>}
+              {<Section data={pageData['sections']['experience']}/>}
+              {<Section data={pageData['sections']['projects']}/>}  
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+
+    return component;
+  };
+
+  return getComponent();
 }
 
 export default App;

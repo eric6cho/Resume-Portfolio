@@ -1,0 +1,104 @@
+@import "mixins/mixins.scss";
+
+.project-section{
+  display:flex;
+  align-items: center;
+  height:550px;
+  position: relative;
+  width:100%;
+
+  .image-set-container{
+    width:100%;
+    height: 100%;
+    display: flex;
+    overflow-y: scroll;
+    flex-wrap: wrap;
+    margin-right: -10px;
+    padding:10px;
+    background: var(--white);
+
+    .image-wrapper{
+      padding:10px;
+      background: var(--white);
+      height: 530px;
+      width:100%;
+
+      .image-container{
+        @include image();
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+      }
+    }
+  }
+
+  .project-info{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background:var(--grey-3);
+    
+    .link-container{
+      margin-top:auto;
+      padding: 50px 45px 48px;
+      display: flex;
+      justify-content: flex-end;
+
+      .link{
+        .icon{
+          margin-left:25px;
+
+          &.image-icons{
+            width:22px;
+            height:22px;
+          }
+
+          &.material-icons{
+            font-size:26px;
+          }
+        }
+      }
+    }
+
+    .text-container{
+      @include transition();
+      text-align: right;
+      min-width:450px;
+      max-width:450px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      padding:50px 50px 40px;
+      text-decoration: none;
+
+      h3,h4,p{
+        @include transition();
+        color:var(--white);
+        text-decoration: none;
+      }
+
+      h3{
+        text-transform: uppercase;
+      }
+
+      h4{
+        color:var(--green);
+      }
+
+      p{
+        color:var(--grey-2);
+      }
+    }
+
+    &:hover{
+      .text-container{
+        background: var(--green);
+
+        h3,h4,p{
+          color:var(--black);
+        }
+      }
+    }
+  }
+}

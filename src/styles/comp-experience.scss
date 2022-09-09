@@ -1,0 +1,58 @@
+@import "mixins/mixins.scss";
+
+.experience-section{
+  padding:50px 50px 40px;
+  background: var(--white);
+
+  h3,h4{      
+    text-align: right;
+  }
+
+  .client-project-intro{
+    margin: 50px 0 20px;
+  }
+
+  .client-project-section{
+    display:flex;
+    
+    .client-project-header{
+      min-width:250px;
+      padding-right: 50px;
+      border-right: 2px solid var(--grey-2);   
+      text-align: right;
+
+      p{
+        @include transition();
+        margin: 20px 0;
+        color: var(--grey-2);
+        cursor: pointer;
+
+        &.active{
+          color:var(--black);
+          font-weight: 600;  
+        }
+
+        &:hover{
+          color:var(--green);
+        }
+      } 
+    }
+
+    .client-project-list{
+      padding-left: 40px;
+
+      ul{
+        @include transition();
+        display: none;
+
+        &.active{
+          display:block;
+        }
+
+        li{
+          margin: 20px 0;
+        }
+      }
+    }
+  }
+}

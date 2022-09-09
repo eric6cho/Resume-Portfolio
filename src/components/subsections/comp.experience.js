@@ -1,0 +1,62 @@
+import '../../styles/comp-experience.scss';
+
+function Experience(props) {
+
+  const clickClientProject = id => {
+    let toggle = type => {
+      let newActiveElem = document.getElementById(id+'-'+type);
+      let oldActiveElem = newActiveElem.parentElement.querySelector('.active');
+      oldActiveElem.classList.remove('active');
+      newActiveElem.classList.add('active');
+    };
+
+    toggle('header');
+    toggle('list');
+  };
+
+  const getComponent = () => {
+
+    let data = props.data;
+
+    let clientProjects = data['client-projects']!==undefined?
+      <>
+        <p className="client-project-intro">{data['client-projects']['title']}</p>
+        <div className="client-project-section">
+          <div className="client-project-header">
+            {data['client-projects']['projects'].map((project,i)=>{
+              let css = project['css']!==undefined?project['css']:'';
+              let click = ()=>clickClientProject(project['id']);
+              let id = project['id']+'-header';
+              return <p key={i} id={id} className={css} onClick={click}>{project['title']}</p>;
+            })}
+          </div>
+          <div className="client-project-list">
+            {data['client-projects']['projects'].map((project,i)=>{
+              let css = project['css']!==undefined?project['css']:'';
+              let id = project['id']+'-list';
+              let responsibilities = project['responsibilities'].map((item,i)=><li key={i}>{item}</li>);
+              return <ul key={i} id={id} className={css}>{responsibilities}</ul>
+            })}
+          </div>
+        </div>
+      </>:
+      null;
+
+    let component = (
+      <div className={data['type']}>
+        <h3>{data['title']} | {data['location']}</h3>
+        <h4>{data['subtitle']}</h4>
+        <ul>
+          {data['responsibilities'].map((item,i)=><li key={i}>{item}</li>)}
+        </ul>
+        {clientProjects}
+      </div>
+    );
+
+    return component;
+  };
+
+  return getComponent();
+}
+
+export default Experience;
