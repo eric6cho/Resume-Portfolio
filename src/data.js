@@ -173,7 +173,7 @@ export let pageData = {
               },
               {
                 'css':'link button white contact-link',
-                'href':'/',
+                'href':'resume/Eric Cho Resume.pdf',
                 'text':'Resume',
                 'external link':true,
                 'icon':{
