@@ -91,7 +91,7 @@ export let navData = {
         'icon':{
           'type':'image',
           'css':'icon image-icons',
-          'src':'resume/icons/linkedin.png',
+          'src':'icons/linkedin.png',
           'alt':'LinkedIn',
         },
       },
@@ -102,7 +102,7 @@ export let navData = {
         'icon':{
           'type':'image',
           'css':'icon image-icons',
-          'src':'resume/icons/github.png',
+          'src':'icons/github.png',
           'alt':'GitHub',
         },
       },
@@ -155,7 +155,7 @@ export let pageData = {
                 'icon':{
                   'type':'image',
                   'css':'icon image-icons',
-                  'src':'resume/icons/linkedin.png',
+                  'src':'icons/linkedin.png',
                   'alt':'LinkedIn',
                 },
               },
@@ -167,7 +167,7 @@ export let pageData = {
                 'icon':{
                   'type':'image',
                   'css':'icon image-icons',
-                  'src':'resume/icons/github.png',
+                  'src':'icons/github.png',
                   'alt':'GitHub',
                 },
               },
@@ -353,14 +353,14 @@ export let pageData = {
         {
           'type':'project-section',
           'images':[
-            'resume/images/Remodel Storefront/0.png',
-            'resume/images/Remodel Storefront/1.png',
-            'resume/images/Remodel Storefront/2.png',
-            'resume/images/Remodel Storefront/3.png',
-            'resume/images/Remodel Storefront/4.png',
-            'resume/images/Remodel Storefront/5.png',
-            'resume/images/Remodel Storefront/6.png',
-            'resume/images/Remodel Storefront/7.png',
+            'images/Remodel Storefront/0.png',
+            'images/Remodel Storefront/1.png',
+            'images/Remodel Storefront/2.png',
+            'images/Remodel Storefront/3.png',
+            'images/Remodel Storefront/4.png',
+            'images/Remodel Storefront/5.png',
+            'images/Remodel Storefront/6.png',
+            'images/Remodel Storefront/7.png',
           ],
           'project-link':'https://remodel-storefront.herokuapp.com/',
           'text-container':{
@@ -383,7 +383,7 @@ export let pageData = {
               'icon':{
                 'type':'image',
                 'css':'icon image-icons',
-                'src':'resume/icons/github.png',
+                'src':'icons/github.png',
                 'alt':'GitHub',
               },
             },
@@ -402,11 +402,11 @@ export let pageData = {
         {
           'type':'project-section',
           'images':[
-            'resume/images/Crypto Price Charts/0.png',
-            'resume/images/Crypto Price Charts/1.png',
-            'resume/images/Crypto Price Charts/2.png',
-            'resume/images/Crypto Price Charts/3.png',
-            'resume/images/Crypto Price Charts/4.png',
+            'images/Crypto Price Charts/0.png',
+            'images/Crypto Price Charts/1.png',
+            'images/Crypto Price Charts/2.png',
+            'images/Crypto Price Charts/3.png',
+            'images/Crypto Price Charts/4.png',
           ],
           'project-link':'https://crypto-price-chart.herokuapp.com/',
           'text-container':{
@@ -428,7 +428,7 @@ export let pageData = {
               'icon':{
                 'type':'image',
                 'css':'icon image-icons',
-                'src':'resume/icons/github.png',
+                'src':'icons/github.png',
                 'alt':'GitHub',
               },
             },
@@ -447,8 +447,8 @@ export let pageData = {
         {
           'type':'project-section',
           'images':[
-            'resume/images/WAND/0.jpg',
-            'resume/images/WAND/1.jpg',
+            'images/WAND/0.jpg',
+            'images/WAND/1.jpg',
           ],
           'project-link':'https://devpost.com/software/wand-hbf0ke',
           'text-container':{
