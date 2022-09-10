@@ -4,13 +4,18 @@
   display:flex;
   flex-direction: column;
   justify-content: center;
-  padding: 100px 200px;
-  margin-bottom: 100px;
+  padding: 30px 10px;
+  margin-bottom: 30px;
+
+  &:last-child{
+    margin-bottom:0;
+    padding: 30px 10px 0;
+  }
 
   .section-header{
     display:flex;
     align-items: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   
     .material-icons{
       margin: 0 10px 0 5px;
@@ -21,11 +26,47 @@
   .subsection{
     @include transition();
     width:100%;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     padding:10px;
             
     &:hover{
       box-shadow: var(--shadow);
     } 
+  }
+}
+
+@include media-md{
+  .section{
+    padding: 100px 50px;
+    margin-bottom: 100px;
+  
+    .section-header{
+      margin-bottom: 50px;
+    }
+  
+    .subsection{
+      margin-bottom: 50px;
+    }
+  }
+}
+
+@include media-xl{
+  .section{
+    padding: 100px 100px;
+    margin-bottom: 100px;
+  
+    .section-header{
+      margin-bottom: 50px;
+    }
+  
+    .subsection{
+      margin-bottom: 50px;
+    }
+  }
+}
+
+@include media-xxl{
+  .section{
+    padding: 100px 15%;
   }
 }

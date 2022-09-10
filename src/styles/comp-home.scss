@@ -2,7 +2,7 @@
 
 #Home{
   min-height:calc(100vh - 70px);
-  padding: 100px 30px;
+  padding: 0px 30px;
 }
 
 .home-section{
@@ -20,13 +20,13 @@
   }
 }
 
-@include media-sm{
+@include media-md{
   #Home{
     min-height:calc(100vh - 150px);
   }
 }
 
-@include media-lg{
+@include media-xl{
   #Home{
     min-height:calc(100vh - 200px);
     padding: 100px 100px;

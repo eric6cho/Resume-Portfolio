@@ -6,12 +6,53 @@
 
   .section-row{
     display: flex;
+    flex-direction: column;
+    margin-bottom:10px;
 
     .row-title{
       min-width:120px;
       margin-right: 30px;
       font-weight: 600;
       color:var(--black);
+      margin-bottom: 0;
+    }
+  }
+}
+
+@include media-md{
+  .education-section{
+    padding:50px 50px 40px;
+    background: var(--white);
+  
+    .section-row{
+      display: flex;
+      flex-direction: row;
+      margin-bottom:0;
+  
+      .row-title{
+        min-width:120px;
+        margin-right: 30px;
+        font-weight: 600;
+        color:var(--black);
+      }
+    }
+  }
+}
+
+@include media-xl{
+  .education-section{
+    padding:50px 50px 40px;
+    background: var(--white);
+  
+    .section-row{
+      display: flex;
+  
+      .row-title{
+        min-width:120px;
+        margin-right: 30px;
+        font-weight: 600;
+        color:var(--black);
+      }
     }
   }
 }

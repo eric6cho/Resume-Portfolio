@@ -31,7 +31,7 @@ body {
       }
     }
 
-    @include media-sm{
+    @include media-md{
       .overlay{
         top: 30px;
         left: 30px;
@@ -40,7 +40,7 @@ body {
       }
     }
 
-    @include media-lg{
+    @include media-xl{
       .overlay{
         top: 50px;
         left: 50px;

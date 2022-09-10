@@ -48,11 +48,11 @@
     text-transform: uppercase;
     margin-top: 4px;
 
-    @include media-sm{      
+    @include media-md{      
       font-size: 70px;
     }
 
-    @include media-lg{
+    @include media-xl{
       font-size: 85px;
     }
   }
@@ -60,24 +60,40 @@
   h2{
     @include transition();
     font-family: Montserrat, sans-serif;
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 600;
     letter-spacing: 2px;
     line-height: 36px;
     color: var(--black);
     text-transform: uppercase;
     margin-bottom: 0;
+    
+    @include media-md{      
+      font-size: 30px;
+    }
+
+    @include media-xl{
+      font-size: 32px;
+    }
   }   
 
   h3{
     @include transition();
     font-family: Montserrat, sans-serif;
-    font-size: 32px;
+    font-size: 20px;
     font-weight: 600;
     letter-spacing: 1px;
     line-height: 36px;
     color: var(--black);
-    margin-bottom: 20px;
+    margin-bottom: 5px;
+
+    @include media-md{      
+      font-size: 26px;
+    }
+
+    @include media-xl{
+      font-size: 32px;
+    }
   }
 
   h4{

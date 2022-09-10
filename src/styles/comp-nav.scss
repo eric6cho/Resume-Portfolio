@@ -31,10 +31,12 @@
     &.primary{
       .link{    
         margin:auto;
+        
         .icon{
           margin: 0;
           font-size:20px;
         }
+
         .link-text{
           display:none;
         }
@@ -46,15 +48,13 @@
           letter-spacing: 0.5px;
           margin-right: auto;
           display:none;
-
         }
       } 
     }
   }
 }
 
-@include media-sm{
-    
+@include media-md{
   .nav{  
     position:fixed;
     width:100%;
@@ -65,37 +65,29 @@
       
       &.secondary{
         display:flex;
-        .link{
-        }
       }
 
       &.primary{
         justify-content: flex-end;
+
         .link{   
           margin:0 0 0 30px;   
-          .icon{
-            //margin: 0 8px 0 40px;
-          }
-          .link-text{
-          // display:block;
-          }
-          &.nav-title{
 
+          &.nav-title{
             margin-left: 0;;
             display:block;
+
             .link-text{
               display:block;
             }
-
-            
           }
         } 
       }
     }
   }
 }
-@include media-lg{
-    
+
+@include media-xl{
   .nav{  
     position:fixed;
     width:100%;
@@ -108,25 +100,23 @@
       &.secondary{
         height: 50px;
         padding: 0 55px;
-
-        .link{
-        }
       }
 
       &.primary{
         .link{  
-          margin:0;  
+          margin:0;
+
           .icon{
             margin: 0 8px 0 40px;
             font-size:16px;
           }
+          
           .link-text{
             display:block;
           }
+          
           &.nav-title{
             display:block;
-
-
           }
         } 
       }
