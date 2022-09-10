@@ -1,20 +1,43 @@
 @import "mixins/mixins.scss";
 
 #Home{
-  min-height:calc(100vh - 200px);
-  padding: 100px 100px;
+  min-height:calc(100vh - 70px);
+  padding: 100px 30px;
 }
 
 .home-section{
   display:flex;
+  flex-direction: column;
   width:100%;
 
   .description-section{
-    text-align: right;
-    margin: 3px auto 0 70px;
+    text-align: left;
+    margin: 0 0 0 5px;
   
     p{
       margin-bottom: 5px;
+    }
+  }
+}
+
+@include media-sm{
+  #Home{
+    min-height:calc(100vh - 150px);
+  }
+}
+
+@include media-lg{
+  #Home{
+    min-height:calc(100vh - 200px);
+    padding: 100px 100px;
+  }
+
+  .home-section{
+    flex-direction: row;
+  
+    .description-section{
+      text-align: right;
+      margin: 3px auto 0 70px;
     }
   }
 }

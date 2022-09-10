@@ -15,7 +15,7 @@ function Link(props) {
       ):
       null;
 
-    let linkContent=<>{icon}{data['text']}</>;
+    let linkContent=<>{icon}<span className='link-text'>{data['text']}</span></>;
 
     let component = (data['external link']?
       <a className={data['css']} href={data['href']} target="_blank" rel="noopener noreferrer">{linkContent}</a>:

@@ -15,22 +15,37 @@ body {
     height:100vh;
   
     .overlay{
+      @include transition();
       background: var(--grey-1);
       position: absolute;
-      top: 50px;
-      left: 50px;
-      height: calc(100% - 200px);
-      width: calc(100% - 100px);
+      top: 10px;
+      left: 10px;
+      height: calc(100% - 70px);
+      width: calc(100% - 20px);
   
-      .overlay-shadow{
+      .overlay-border{
         height:100%;
-        
-        .overlay-border{
-          height:100%;
-          overflow-y: scroll;
-          scroll-behavior: smooth;
-          border: 1px solid var(--grey-3);
-        }
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+        border: 1px solid var(--grey-3);
+      }
+    }
+
+    @include media-sm{
+      .overlay{
+        top: 30px;
+        left: 30px;
+        height: calc(100% - 140px);
+        width: calc(100% - 60px);
+      }
+    }
+
+    @include media-lg{
+      .overlay{
+        top: 50px;
+        left: 50px;
+        height: calc(100% - 200px);
+        width: calc(100% - 100px);
       }
     }
   }
