@@ -1,14 +1,14 @@
 @mixin themes(){
   :root {
     --white: rgb(255,255,255);
-    --grey-1:rgb(210, 210, 210);
+    --grey-1:rgb(225, 225, 225);
     --grey-2: rgb(180,180,180);
     --grey-3: rgb(50,50,50);
     --grey-4: rgb(30,30,30);
     --black: rgb(0,0,0);
     --green: rgb(30, 220, 180);
     --green-2: rgb(0, 180, 140);
-    --shadow: 1px 3px 6px 2px #00000033;
+    --shadow: 1px 3px 6px 2px #00000044;
     --transparent: rgba(0,0,0,0);
   }
 }
