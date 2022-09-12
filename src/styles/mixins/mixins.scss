@@ -39,7 +39,7 @@
   h1{
     @include transition();
     font-family: Montserrat, sans-serif;
-    font-size: 55px;
+    font-size: 40px;
     font-weight: 600;
     line-height: 63px;
     letter-spacing: -2px;
@@ -49,7 +49,7 @@
     margin-top: 4px;
 
     @include media-md{      
-      font-size: 70px;
+      font-size: 60px;
     }
 
     @include media-xl{
@@ -60,16 +60,16 @@
   h2{
     @include transition();
     font-family: Montserrat, sans-serif;
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 600;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     line-height: 36px;
     color: var(--black);
     text-transform: uppercase;
     margin-bottom: 0;
     
     @include media-md{      
-      font-size: 30px;
+      font-size: 28px;
     }
 
     @include media-xl{
@@ -80,7 +80,7 @@
   h3{
     @include transition();
     font-family: Montserrat, sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
     letter-spacing: 1px;
     line-height: 36px;
@@ -88,11 +88,11 @@
     margin-bottom: 5px;
 
     @include media-md{      
-      font-size: 26px;
+      font-size: 22px;
     }
 
     @include media-xl{
-      font-size: 32px;
+      font-size: 26px;
     }
   }
 
@@ -108,12 +108,16 @@
   }
 
   p,li{
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 400;
     letter-spacing: 0px;
     line-height: 18px;
     color:var(--grey-4);
     margin-bottom: 10px;
+
+    @include media-md{      
+      font-size: 14px;
+    }
   }
 }
 
@@ -141,11 +145,6 @@
   @media (min-width: 1400px) { @content; }
 }
 
-@mixin blur($blur:15){
-  -webkit-backdrop-filter: blur($blur + unquote("px"));
-  backdrop-filter: blur($blur + unquote("px"));
-};
-
 @mixin transition ($duration:0.3) {
   transition-duration: $duration + unquote("s");
 }
@@ -153,10 +152,10 @@
 @mixin image() {
   img{
     @include transition();
-    background: rgba(240,240,240,1);
+    background: var(--white);
     position: absolute;
-    height: 108%;
-    width: 108%;
+    height: 100%;
+    width: 100%;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);

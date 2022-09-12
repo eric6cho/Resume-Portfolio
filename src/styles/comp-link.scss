@@ -41,12 +41,11 @@
   }
 
   &.button{
-    justify-content: flex-start;
-    padding: 25px 50px;
+    justify-content: center;
+    padding: 15px 50px;
     font-size: 14px;
     font-weight: 600;
     letter-spacing: 1px;
-    text-align: center;
 
     &:hover{
       background:var(--green);
@@ -76,5 +75,18 @@
         filter: invert(89%) sepia(92%) saturate(560%) hue-rotate(86deg) brightness(85%) contrast(103%);
       }
     }
+  }
+}
+
+@include media-md{
+  .link{
+  
+  
+    &.button{
+      justify-content: flex-start;
+      padding: 25px 50px;
+    
+    }
+ 
   }
 }
