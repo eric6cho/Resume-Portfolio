@@ -353,6 +353,54 @@ export let pageData = {
         {
           'type':'project-section',
           'images':[
+            'images/Image Mesh/0.png',
+            'images/Image Mesh/1.png',
+            'images/Image Mesh/2.png',
+            'images/Image Mesh/3.png',
+            'images/Image Mesh/4.png',
+            'images/Image Mesh/5.png',
+            'images/Image Mesh/6.png',
+            'images/Image Mesh/7.png',
+          ],
+          'project-link':'https://image-mesh.herokuapp.com/',
+          'text-container':{
+            'title':'Image Mesh',
+            'subtitle':'React, Node.js, JavaScript, SCSS, Heroku',
+            'text':[
+              'A react client project made to create pixel art and edited photos. Allows users to apply '+
+              'filters and generate new photos from images sourced online. Creates a palette '+
+              'based on the colors in the edited photo, and allows users to create unique pixel '+
+              'maps and gradients from the palette.',
+              'Click the links below to view the GitHub repositories of the client, server and the deployed application.',
+            ],
+          },
+          'links':[
+            {
+              'css':'link white',
+              'href':'https://github.com/eric6cho/image-mesh-react',
+              'external link':true,
+              'icon':{
+                'type':'image',
+                'css':'icon image-icons',
+                'src':'icons/github.png',
+                'alt':'GitHub',
+              },
+            },
+            {
+              'css':'link white',
+              'href':'https://image-mesh.herokuapp.com/',
+              'external link':true,
+              'icon':{
+                'type':'icon',
+                'css':'icon material-icons',
+                'text':'launch',
+              },
+            },
+          ],   
+        },
+        {
+          'type':'project-section',
+          'images':[
             'images/Remodel Storefront/0.png',
             'images/Remodel Storefront/1.png',
             'images/Remodel Storefront/2.png',
