@@ -310,7 +310,6 @@ export let pageData = {
                   'Built content pages for patient devices and articles, and tested all components on '+
                   'those pages.',
                   'Provided support to site content authors and other front end developers.',
-                  'Regularly participated in client facing demos.',
                 ],
               },
               {
@@ -319,9 +318,9 @@ export let pageData = {
                 'responsibilities':[
                   'Built full stack features for an internal site used to guide the training '+
                   'process of new interns.',
-                  'Built the front and back end of a projects page, which allowed users to create and '+
+                  'Built the front and back end of the projects page, which allowed users to create and '+
                   'participate in company/office initatives.',
-                  'Built UI for course content pages, project pages, and admin pages. Provided maintenence '+
+                  'Built UI for course content pages, projects page, and admin pages. Provided maintenence '+
                   'to the UI for all parts of the site.',
                 ],
               },
@@ -367,11 +366,11 @@ export let pageData = {
             'title':'Image Mesh',
             'subtitle':'React, Node.js, JavaScript, SCSS, Heroku',
             'text':[
-              'A react client project made to create pixel art and edited photos. Allows users to apply '+
+              'A full stack web application made to create pixel art and edited photos. Allows users to apply '+
               'filters and generate new photos from images sourced online. Creates a palette '+
               'based on the colors in the edited photo, and allows users to create unique pixel '+
               'maps and gradients from the palette.',
-              'Click the links below to view the GitHub repositories of the client, server and the deployed application.',
+              'Click the links below to view the GitHub repository of the client project and the deployed application.',
             ],
           },
           'links':[
@@ -394,6 +393,35 @@ export let pageData = {
                 'type':'icon',
                 'css':'icon material-icons',
                 'text':'launch',
+              },
+            },
+          ],   
+        },
+        {
+          'type':'project-section',
+          'images':[
+            'images/Spotify Pixelfy/0.png',
+          ],
+          'project-link':'https://github.com/eric6cho/spotify-pixelfy',
+          'text-container':{
+            'title':'Pixelfy',
+            'subtitle':'React, Node.js, JavaScript, SCSS, Heroku',
+            'text':[
+              'An ongoing full stack project made to generate a pixel art collection of the top artists of a Spotify listener. '+
+              'Uses the Spotify API and my own Image Mesh API to retrieve artist images and create pixel art versions. ',
+              'Click the link below to view the GitHub repository of the project.',
+            ],
+          },
+          'links':[
+            {
+              'css':'link white',
+              'href':'https://github.com/eric6cho/spotify-pixelfy',
+              'external link':true,
+              'icon':{
+                'type':'image',
+                'css':'icon image-icons',
+                'src':'icons/github.png',
+                'alt':'GitHub',
               },
             },
           ],   
