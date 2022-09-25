@@ -402,14 +402,14 @@ export let pageData = {
           'images':[
             'images/Spotify Pixelfy/0.png',
           ],
-          'project-link':'https://github.com/eric6cho/spotify-pixelfy',
+          'project-link':'https://spotify-pixelfy.herokuapp.com/',
           'text-container':{
             'title':'Pixelfy',
             'subtitle':'React, Node.js, JavaScript, SCSS, Heroku',
             'text':[
               'An ongoing full stack project made to generate a pixel art collection of the top artists of a Spotify listener. '+
               'Uses the Spotify API and my own Image Mesh API to retrieve artist images and create pixel art versions. ',
-              'Click the link below to view the GitHub repository of the project.',
+              'Click the links below to view the GitHub and the deployed application.',
             ],
           },
           'links':[
@@ -422,6 +422,16 @@ export let pageData = {
                 'css':'icon image-icons',
                 'src':'icons/github.png',
                 'alt':'GitHub',
+              },
+            },
+            {
+              'css':'link white',
+              'href':'https://spotify-pixelfy.herokuapp.com/',
+              'external link':true,
+              'icon':{
+                'type':'icon',
+                'css':'icon material-icons',
+                'text':'launch',
               },
             },
           ],   
