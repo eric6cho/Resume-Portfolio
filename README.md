@@ -9,8 +9,8 @@ This project is a portfolio for Eric Cho, which contains the following:
 
 ## Deployed Application
 
-This application is deployed and hosted on GitHub Pages and can be viewed at 
-[eric6cho.github.io](https://eric6cho.github.io/).
+This application is deployed and hosted on GitHub Pages and can be viewed 
+[here](https://eric6cho.github.io/).
 
 ## Available Scripts
 
@@ -20,7 +20,7 @@ All scripts below are run from the project directory.
 
 `npm start`
 
-This will start the React client app on port 3000 on [localhost:3000](http://localhost:3000).
+This will start the React client app on port 3000.
 
 ### Predeploy the project
 
