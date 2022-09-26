@@ -26,13 +26,15 @@ This will start the React client app on port 3000 on [localhost:3000](http://loc
 
 `npm predeploy`
 
-This will prepare the files in the master branch to be deployed to GitHub Pages. 
-This compiles changes in code, content, and static assets in the build folder.
+This will prepare the files in the `master` branch to be deployed to GitHub Pages. 
 
 ### Deploy the project
 
 `npm deploy`
 
 This will deploy the predeployed contents to GitHub Pages.
-The content shown in the deployed application is based on the `gh-pages` branch, 
-which is pushed when this command is run.
+
+## Deploying The Project
+
+The deployed project is based on the `gh-pages` branch, and a new deployment occurs when the user runs the `npm run predeploy` and `npm run deploy` commands.
+
