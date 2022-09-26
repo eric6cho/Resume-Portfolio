@@ -9,7 +9,7 @@ This project is a portfolio for Eric Cho, which contains the following:
 
 ## Deployed Application
 
-This application is deployed and hosted on GitHub Pages, and can be viewed at 
+This application is deployed and hosted on GitHub Pages and can be viewed at 
 [eric6cho.github.io](https://eric6cho.github.io/).
 
 ## Available Scripts
