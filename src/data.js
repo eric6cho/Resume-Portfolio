@@ -366,7 +366,7 @@ export let pageData = {
             'title':'Image Mesh',
             'subtitle':'React, Node.js, JavaScript, SCSS, Heroku',
             'text':[
-              'A full stack web application made to create pixel art and edited photos. Allows users to apply '+
+              'A full stack web application that allows users to create pixel art and edited photos. Users can apply '+
               'filters and generate new photos from images sourced online. Creates a palette '+
               'based on the colors in the edited photo, and allows users to create unique pixel '+
               'maps and gradients from the palette.',
@@ -447,6 +447,8 @@ export let pageData = {
             'images/Remodel Storefront/5.png',
             'images/Remodel Storefront/6.png',
             'images/Remodel Storefront/7.png',
+            'images/Remodel Storefront/8.png',
+            'images/Remodel Storefront/9.png',
           ],
           'project-link':'https://remodel-storefront.herokuapp.com/',
           'text-container':{
@@ -493,6 +495,7 @@ export let pageData = {
             'images/Crypto Price Charts/2.png',
             'images/Crypto Price Charts/3.png',
             'images/Crypto Price Charts/4.png',
+            'images/Crypto Price Charts/5.png',
           ],
           'project-link':'https://crypto-price-chart.herokuapp.com/',
           'text-container':{
