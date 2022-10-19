@@ -116,7 +116,7 @@ export let pageData = {
       'id':'Home',
       'title':'Eric Cho',
       'description':[
-        'Front End Developer',
+        'Full Stack Developer',
         'University of Georgia, 2020',
         'Based in Atlanta, GA',
       ],
@@ -131,17 +131,14 @@ export let pageData = {
         {
           'type':'about-section',
           'text-container':[
-            'Hi, my name is Eric Cho and I am an alumni of The University of Georgia with a bachelors in Computer Science.',
-            'My earliest interaction with any code was in middle school where my friends and I found out how to '+
-            'click "inspect element" and mess around with each other\'s website pages. I thought it was just a '+
-            'funny gag to pull, but little did I know, that would set me on a path where I would get the chance '+
-            'to start coding in 2016 during my freshman year of college and continue to learn, not only in the United States, but abroad in Singapore as well.',
-            'After graduating, finding a niche in the world of tech was pretty straightforward. I grew up in a '+
-            'family of artists, so becoming a front end developer felt like the most natural way to be involved '+
-            'in both tech and visual design.', 
-            'As of now, I have had the chance to be a part of amazing teams to create online products and '+
-            'solutions used by businesses across the country, and it has helped solidify my focus on creating '+
-            'online experiences to be able to reach and impact more people.',
+            'Hi, my name is Eric Cho and I am an alumni of The University of Georgia with a bachelors in Computer Science. My earliest interaction with any code '+
+            'was in middle school where my friends and I found out how to click "inspect element" and mess around with each other\'s website pages. I thought it '+
+            'was just a funny gag to pull, but little did I know, that would set me on a path where I would get the chance to start coding in 2016 during my '+
+            'freshman year of college and continue to learn, not only in the United States, but abroad in Singapore as well. After graduating, finding a niche in '+
+            'the world of tech was pretty straightforward. I grew up in a family of artists, so becoming a developer that focuses on full stack and frontend felt '+
+            'like the most natural way to be involved in both tech and visual design.', 
+            'As of now, I have had the chance to be a part of amazing teams to create online products and solutions used by businesses across the country, and it '+
+            'has helped solidify my focus on creating online experiences to be able to reach and impact more people.',
             'It continues to be my goal today.',  
           ],
           'link-container':{
@@ -271,10 +268,10 @@ export let pageData = {
           'location':'Perficient',
           'subtitle':'May 2020 - Dec 2021',
           'responsibilities':[
-            'Took on a front end and full stack developer role on a variety of internal and client '+
+            'Took on a frontend and full stack developer role on a variety of internal and client '+
             'facing projects.',
-            'Used JQuery, React, C#, and Sitecore to build components, services, interfaces, and stylesheets. ',
-            'Provided support to site content authors and other front end developers.',
+            'Used JavaScript, React, C#, SCSS and Sitecore to build components, services, interfaces, and stylesheets. ',
+            'Provided support to site content authors and other frontend developers.',
             'Regularly participated in client facing demos.',
           ],
           'client-projects':{
@@ -285,18 +282,18 @@ export let pageData = {
                 'css':'active',
                 'title':'Healthcare Provider Client',
                 'responsibilities':[
-                  'Took a role as the lead front end developer for a site that saw a successful launch.',
-                  'Implemented the UI and front end logic of the main "Find a Doctor/Location" functionality of '+
+                  'Took a role as the lead frontend developer for a site that saw a successful launch.',
+                  'Implemented the UI and frontend logic of the main "Find a Doctor/Location" functionality of '+
                   'the project and various components throughout the site.',
                   'Regularly participated in client facing demos.',
-                  'Provided support to other front end developers.',
+                  'Provided support to other frontend developers.',
                 ],
               },
               {
                 'id':'project-2',
                 'title':'Home Improvement Client ',
                 'responsibilities':[
-                  'Performed major front end bugs fixes that were critical to the project\'s completion.',
+                  'Performed major frontend bugs fixes that were critical to the project\'s completion.',
                   'Worked on various components throughout the site, including the main "Find a Dealer" '+
                   'functionality of the site.',
                   'Regularly participated in client facing demos.',            
@@ -306,10 +303,10 @@ export let pageData = {
                 'id':'project-3',
                 'title':'Healthcare Provider Client',
                 'responsibilities':[
-                  'Built and fixed the UI and front end logic of components found throughout the site.',
+                  'Built and fixed the UI and frontend logic of components found throughout the site.',
                   'Built content pages for patient devices and articles, and tested all components on '+
                   'those pages.',
-                  'Provided support to site content authors and other front end developers.',
+                  'Provided support to site content authors and other frontend developers.',
                 ],
               },
               {
@@ -318,7 +315,7 @@ export let pageData = {
                 'responsibilities':[
                   'Built full stack features for an internal site used to guide the training '+
                   'process of new interns.',
-                  'Built the front and back end of the projects page, which allowed users to create and '+
+                  'Built the front and backend of the projects page, which allowed users to create and '+
                   'participate in company/office initatives.',
                   'Built UI for course content pages, projects page, and admin pages. Provided maintenence '+
                   'to the UI for all parts of the site.',
@@ -366,10 +363,9 @@ export let pageData = {
             'title':'Image Mesh',
             'subtitle':'React, Node.js, JavaScript, SCSS, Heroku',
             'text':[
-              'A full stack web application that allows users to create pixel art and edited photos. Users can apply '+
-              'filters and generate new photos from images sourced online. Creates a palette '+
-              'based on the colors in the edited photo, and allows users to create unique pixel '+
-              'maps and gradients from the palette.',
+              'A full stack web application that allows users to create pixel art and edited photos. Users can apply filters and generate '+
+              'new photos from images sourced online. Creates a palette based on the colors in the edited photo, and allows users to '+
+              'create unique pixel maps and gradients from the palette.',
               'Click the links below to view the GitHub repository of the client project and the deployed application.',
             ],
           },
