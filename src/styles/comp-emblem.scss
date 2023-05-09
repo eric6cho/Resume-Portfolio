@@ -1,0 +1,326 @@
+@import "mixins/mixins.scss";
+
+.emblem{
+  width:100px;
+  height:100px;
+  min-height: 50px;
+  min-height: 50px;
+  display: flex;
+
+  .center{
+    height: 2px;
+    width:2px;
+    margin:auto;
+    position:relative;
+
+    .circle,.square{
+      border: 2px solid rgb(80,80,255);
+
+    }
+
+    .line{
+      
+      background: rgb(80,80,255);
+    }
+
+    .circle{
+      position:absolute;
+      border-radius: 50px;
+
+      &.c-1{
+        width:80px;
+        height:80px;
+        top:-39px;
+        left:-39px;
+
+      }
+      &.c-2{
+        width:70px;
+        height:70px;
+        top:-34px;
+        left:-34px;
+
+      }
+
+    }
+
+    .line{
+      
+      position:absolute;
+
+      &.l-1{
+        width: 32px;
+        height:2px;
+        left:-15px;
+        top:-15px;
+      }
+
+      &.l-2{
+        height:16px;
+        width:2px;
+        top:-14px;
+      }
+      &.l-3{
+        height:12px;
+        width:2px;
+        top:-14px;
+        left:15px;
+      }
+      &.l-4{
+        height:12px;
+        width:2px;
+        top:-14px;
+        right:15px;
+      }
+
+      &.l-5{
+        height:13px;
+        width:2px;
+        bottom:-15px;
+        right:15px;
+      }
+
+      &.l-6{
+        height:13px;
+        width:2px;
+        bottom:-15px;
+        left:15px;
+      }
+      &.l-7{
+        width: 32px;
+        height:2px;
+        left:-15px;
+        bottom:-15px;
+      }
+    }
+
+    .square{
+      position: absolute;
+      width:18px;
+      height:18px;
+
+      &.s-1{
+        top:-20px;
+        left: -20px;
+        border-right: 0;
+        border-bottom: 0;
+      }
+      
+      &.s-2{
+        top:-20px;
+        right: -20px;
+        border-left: 0;
+        border-bottom: 0;
+      }
+
+      &.s-3{
+        bottom:-20px;
+        left: -20px;
+        border-right: 0;
+        border-top: 0;
+      }
+      
+      &.s-4{
+        bottom:-20px;
+        right: -20px;
+        border-left: 0;
+        border-top: 0;
+      }
+
+      &.s-5{
+        
+        width:30px;
+        height:7px;
+        top:-30px;
+        left: -14px;
+        border-top: 0;
+      }
+      
+      &.s-6{ 
+        width:30px;
+        height:7px;
+        bottom:-30px;
+        left: -14px;
+        border-bottom: 0;
+      } 
+
+      &.s-7{ 
+        height:30px;
+        width:7px;
+        left:-30px;
+        top: -14px;
+        border-left: 0;
+      }
+      
+      &.s-8{ 
+        height:30px;
+        width:7px;
+        right:-30px;
+        top: -14px;
+        border-right: 0;
+      }
+    }
+
+  }
+}
+
+
+.nav{
+
+  .emblem{
+    width:50px;
+    height:50px;
+    min-height: 50px;
+    min-height: 50px;
+  
+    .center{
+  
+      .circle,.square{
+        border: 2px solid rgb(150,150,150);
+
+      }
+
+      .line{
+        
+        background: rgb(150,150,150);
+      }
+
+      .circle{
+  
+        &.c-1{
+          width:50px;
+          height:50px;
+          top:-24px;
+          left:-24px;
+  
+        }
+        &.c-2{
+          width:42px;
+          height:42px;
+          top:-20px;
+          left:-20px;
+  
+        }
+  
+      }
+  
+      .line{
+        
+        &.l-1{
+          width: 16px;
+          height:2px;
+          left:-7px;
+          top:-7px;
+        }
+  
+        &.l-2{
+          height:8px;
+          width:2px;
+          top:-6px;
+        }
+
+        &.l-3{
+          height:6px;
+          width:2px;
+          top:-6px;
+          left:7px;
+        }
+        &.l-4{
+          height:6px;
+          width:2px;
+          top:-6px;
+          right:7px;
+        }
+  
+        &.l-5{
+          height:6px;
+          width:2px;
+          bottom:-6px;
+          right:7px;
+        }
+  
+        &.l-6{
+          height:6px;
+          width:2px;
+          bottom:-6px;
+          left:7px;
+        }
+        &.l-7{
+          width: 16px;
+          height:2px;
+          left:-7px;
+          bottom:-7px;
+        }
+      }
+  
+      .square{
+        position: absolute;
+        width:11px;
+        height:11px;
+  
+        &.s-1{
+          top:-11px;
+          left: -11px;
+          border-right: 0;
+          border-bottom: 0;
+        }
+        
+        &.s-2{
+          top:-11px;
+          right: -11px;
+          border-left: 0;
+          border-bottom: 0;
+        }
+  
+        &.s-3{
+          bottom:-11px;
+          left: -11px;
+          border-right: 0;
+          border-top: 0;
+        }
+        
+        &.s-4{
+          bottom:-11px;
+          right: -11px;
+          border-left: 0;
+          border-top: 0;
+        }
+  
+        &.s-5{
+          
+          width:20px;
+          height:4px;
+          top:-17px;
+          left: -9px;
+          border-top: 0;
+        }
+        
+        &.s-6{ 
+          width:20px;
+          height:4px;
+          bottom:-17px;
+          left: -9px;
+          border-bottom: 0;
+        } 
+  
+        &.s-7{ 
+          height:20px;
+          width:4px;
+          left:-17px;
+          top: -9px;
+          border-left: 0;
+        }
+        
+        &.s-8{ 
+          height:20px;
+          width:4px;
+          right:-17px;
+          top: -9px;
+          border-right: 0;
+        }
+      }
+  
+    }
+  }
+  
+}

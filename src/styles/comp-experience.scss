@@ -2,8 +2,10 @@
 
 .experience-section{
   padding:50px 50px 40px;
-  background: var(--white);
-
+  background: rgb(30,30,30);
+  border-radius: 15px;
+  overflow: hidden;
+  
   h3,h4{      
     text-align: right;
   }
@@ -31,12 +33,16 @@
         cursor: pointer;
 
         &.active{
-          color:var(--black);
-          font-weight: 600;  
+          color:rgb(100,110,255);
+          font-weight: 600;
+          
+        &:hover{
+          color:rgb(100,110,255);
+        }  
         }
 
         &:hover{
-          color:var(--green);
+          color:white;
         }
       } 
     }

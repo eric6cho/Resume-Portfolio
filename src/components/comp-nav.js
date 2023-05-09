@@ -1,4 +1,5 @@
 import '../styles/comp-nav.scss';
+import Emblem from './comp-emblem';
 
 import Link from "./comp-link";
 
@@ -14,6 +15,7 @@ function Nav(props) {
           {data['secondary']['links'].map((linkData,i)=><Link key={i} data={linkData}/>)}
         </div>
         <div className="nav-bar primary">
+          
           {data['primary']['links'].map((linkData,i)=><Link key={i} data={linkData}/>)}
         </div>
       </div>

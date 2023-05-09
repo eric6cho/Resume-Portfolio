@@ -11,12 +11,19 @@ function About(props) {
     let component = (
       <div className={data['type']}>
         <div className="text-container">
+          <h3>Hi :)</h3>
           {data['text-container'].map((text,i)=><p key={i}>{text}</p>)}
         </div>
         <div className="link-container">
-          <h4>{data['link-container']['header']}</h4>
-          {data['link-container']['links'].map((linkData,i)=><Link key={i} data={linkData}/>)}
-        </div>    
+          <div className="link-container-content">
+              
+            <h4>{data['link-container']['header']}</h4>
+            <div className="button-container">
+              {data['link-container']['links'].map((linkData,i)=><Link key={i} data={linkData}/>)}
+          
+            </div>
+          </div>
+         </div>    
       </div>
     );
 

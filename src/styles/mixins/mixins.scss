@@ -15,7 +15,7 @@
 
 @mixin custom-scrollbar () {
   ::-webkit-scrollbar {
-    width: 10px;
+    width: 4px;
   }
   
   ::-webkit-scrollbar-track {
@@ -23,12 +23,13 @@
   }
   
   ::-webkit-scrollbar-thumb {
-    background: rgba(0,0,0,0.35);
+    background: rgba(255,255,255,0.1);
+    
+    &:hover {
+    background: rgba(255,255,255,0.2);
+  }
   }
   
-  ::-webkit-scrollbar-thumb:hover {
-    background: rgba(0,0,0,0.5);
-  }
 }
 
 @mixin defaultText () {
@@ -39,41 +40,38 @@
   h1{
     @include transition();
     font-family: Montserrat, sans-serif;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 600;
     line-height: 63px;
     letter-spacing: -2px;
     word-spacing: 5px;
-    color: var(--black);
+    color: rgb(255,255,255);
     text-transform: uppercase;
     margin-top: 4px;
 
     @include media-md{      
-      font-size: 60px;
+      font-size: 50px;
     }
 
-    @include media-xl{
-      font-size: 85px;
-    }
   }
 
   h2{
     @include transition();
     font-family: Montserrat, sans-serif;
-    font-size: 24px;
+    font-size: 16px;
     font-weight: 600;
     letter-spacing: 3px;
     line-height: 36px;
-    color: var(--black);
+    color: rgb(255, 255, 255);
     text-transform: uppercase;
     margin-bottom: 0;
     
     @include media-md{      
-      font-size: 28px;
+      font-size: 18px;
     }
 
     @include media-xl{
-      font-size: 32px;
+      font-size: 22px;
     }
   }   
 
@@ -84,7 +82,7 @@
     font-weight: 600;
     letter-spacing: 1px;
     line-height: 36px;
-    color: var(--black);
+    color: rgb(255, 255, 255);
     margin-bottom: 5px;
 
     @include media-md{      
@@ -99,25 +97,26 @@
   h4{
     @include transition();
     font-family: 'Courier New', Courier, monospace;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 600;
     letter-spacing: 0px;
     line-height: 18px;
-    color:var(--green-2);
+    color:rgb(100,110,255);
     margin-bottom: 20px;
   }
 
   p,li{
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 400;
     letter-spacing: 0px;
     line-height: 18px;
-    color:var(--grey-4);
-    margin-bottom: 10px;
+    color:rgb(180,180,180);
+    margin-bottom: 30px;
 
-    @include media-md{      
-      font-size: 14px;
+    &:last-child{
+      margin-bottom: 0;
     }
+
   }
 }
 
@@ -154,11 +153,17 @@
     @include transition();
     background: var(--white);
     position: absolute;
-    height: 100%;
-    width: 100%;
+    height: 102%;
+    width: 102%;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     object-fit: cover;
+    border-radius: 0px;
   }
 }
+
+@mixin blur($blur:5){
+  -webkit-backdrop-filter: blur($blur + unquote("px"));
+  backdrop-filter: blur($blur + unquote("px"));
+};

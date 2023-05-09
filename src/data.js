@@ -1,4 +1,260 @@
 
+let projectSynthetica = {
+  'type':'project-section',
+  'images':[
+    'images/Synthetica/0.png',
+    'images/Synthetica/1.png',
+    'images/Synthetica/2.png',
+    'images/Synthetica/3.png',
+    'images/Synthetica/4.png',
+    'images/Synthetica/5.png',
+  ],
+  'project-link':'https://synthetica.herokuapp.com/',
+  'text-container':{
+    'title':'Synthetica',
+    'subtitle':'React, Node.js, JavaScript, SCSS, Heroku, ChatGPT',
+    'text':[
+      'A visual literarure series of poems, short stories and experimental pieces written by AI and contained by human design.',
+    ],
+  },
+  'links':[
+    {
+      'css':'link white',
+      'href':'https://github.com/eric6cho/synthetica',
+      'external link':true,
+      'icon':{
+        'type':'image',
+        'css':'icon image-icons',
+        'src':'icons/github.png',
+        'alt':'GitHub',
+      },
+    },
+    {
+      'css':'link white',
+      'href':'https://synthetica.herokuapp.com/',
+      'external link':true,
+      'icon':{
+        'type':'icon',
+        'css':'icon material-icons',
+        'text':'launch',
+      },
+    },
+  ],   
+};
+
+
+let projectImageMesh = {
+  'type':'project-section',
+  'images':[
+    'images/Image Mesh/0.png',
+    'images/Image Mesh/1.png',
+    'images/Image Mesh/2.png',
+    'images/Image Mesh/3.png',
+    'images/Image Mesh/4.png',
+    'images/Image Mesh/5.png',
+    'images/Image Mesh/6.png',
+    'images/Image Mesh/7.png',
+  ],
+  'project-link':'https://image-mesh.herokuapp.com/',
+  'text-container':{
+    'title':'Image Mesh',
+    'subtitle':'React, Node.js, JavaScript, SCSS, Heroku',
+    'text':[
+      'A full stack web application that allows users to create pixel art and edited photos. Users can apply filters and generate '+
+      'new photos from images sourced online. Creates a palette based on the colors in the edited photo, and allows users to '+
+      'create unique pixel maps and gradients from the palette.',
+      'Click the links below to view the GitHub repository of the client project and the deployed application.',
+    ],
+  },
+  'links':[
+    {
+      'css':'link white',
+      'href':'https://github.com/eric6cho/image-mesh-react',
+      'external link':true,
+      'icon':{
+        'type':'image',
+        'css':'icon image-icons',
+        'src':'icons/github.png',
+        'alt':'GitHub',
+      },
+    },
+    {
+      'css':'link white',
+      'href':'https://image-mesh.herokuapp.com/',
+      'external link':true,
+      'icon':{
+        'type':'icon',
+        'css':'icon material-icons',
+        'text':'launch',
+      },
+    },
+  ],   
+};
+
+let projectPixelfy =    
+{
+  'type':'project-section',
+  'images':[
+    'images/Spotify Pixelfy/0.png',
+  ],
+  'project-link':'https://spotify-pixelfy.herokuapp.com/',
+  'text-container':{
+    'title':'Pixelfy',
+    'subtitle':'React, Node.js, JavaScript, SCSS, Heroku',
+    'text':[
+      'An ongoing full stack project made to generate a pixel art collection of the top artists of a Spotify listener. '+
+      'Uses the Spotify API and my own Image Mesh API to retrieve artist images and create pixel art versions. ',
+      'Click the links below to view the GitHub and the deployed application.',
+    ],
+  },
+  'links':[
+    {
+      'css':'link white',
+      'href':'https://github.com/eric6cho/spotify-pixelfy',
+      'external link':true,
+      'icon':{
+        'type':'image',
+        'css':'icon image-icons',
+        'src':'icons/github.png',
+        'alt':'GitHub',
+      },
+    },
+    {
+      'css':'link white',
+      'href':'https://spotify-pixelfy.herokuapp.com/',
+      'external link':true,
+      'icon':{
+        'type':'icon',
+        'css':'icon material-icons',
+        'text':'launch',
+      },
+    },
+  ],   
+};
+
+let projectRemodel = {
+  'type':'project-section',
+  'images':[
+    'images/Remodel Storefront/0.png',
+    'images/Remodel Storefront/1.png',
+    'images/Remodel Storefront/2.png',
+    'images/Remodel Storefront/3.png',
+    'images/Remodel Storefront/4.png',
+    'images/Remodel Storefront/5.png',
+    'images/Remodel Storefront/6.png',
+    'images/Remodel Storefront/7.png',
+    'images/Remodel Storefront/8.png',
+    'images/Remodel Storefront/9.png',
+  ],
+  'project-link':'https://remodel-storefront.herokuapp.com/',
+  'text-container':{
+    'title':'Remodel Storefront',
+    'subtitle':'React, Node.js, JavaScript, SCSS, Heroku',
+    'text':[
+      'A project made to replicate the components and functionalities seen in a '+
+      'ecommerce website with many design languages for single template components. '+
+      'Inspired by working with clients with requirements to implement many '+
+      'different components with similar structures. Built over 30 unique design '+
+      'combinations and visual themes that can be applied to each component template.',
+      'Click the links below to view the GitHub and the deployed application.',
+    ],
+  },
+  'links':[
+    {
+      'css':'link white',
+      'href':'https://github.com/eric6cho/Remodel-Storefront',
+      'external link':true,
+      'icon':{
+        'type':'image',
+        'css':'icon image-icons',
+        'src':'icons/github.png',
+        'alt':'GitHub',
+      },
+    },
+    {
+      'css':'link white',
+      'href':'https://remodel-storefront.herokuapp.com/',
+      'external link':true,
+      'icon':{
+        'type':'icon',
+        'css':'icon material-icons',
+        'text':'launch',
+      },
+    },
+  ],   
+};
+
+let projectCryptoCharts =  {
+  'type':'project-section',
+  'images':[
+    'images/Crypto Price Charts/0.png',
+    'images/Crypto Price Charts/1.png',
+    'images/Crypto Price Charts/2.png',
+    'images/Crypto Price Charts/3.png',
+    'images/Crypto Price Charts/4.png',
+    'images/Crypto Price Charts/5.png',
+  ],
+  'project-link':'https://github.com/eric6cho/Crypto-Price-Chart',
+  'text-container':{
+    'title':'Cryptocurrency Price Charts',
+    'subtitle':'React, Node.js, JavaScript, SCSS, Heroku',
+    'text':[
+      'A personal use, full stack data visualization project that gathers data of '+
+      'cryptocurrency assets and the market as a whole. Displays live and historical '+
+      'prices and compiled technical indicators of over 200 cryptocurrency assets, '+
+      'while using the TradingView API to create interactive charts for this data. ',
+      'Click the links below to view the GitHub and the deployed application.',
+    ],
+  },
+  'links':[
+    {
+      'css':'link white',
+      'href':'https://github.com/eric6cho/Crypto-Price-Chart',
+      'external link':true,
+      'icon':{
+        'type':'image',
+        'css':'icon image-icons',
+        'src':'icons/github.png',
+        'alt':'GitHub',
+      },
+    },
+  ],
+};
+
+let projectWand = {
+  'type':'project-section',
+  'images':[
+    'images/WAND/0.jpg',
+    'images/WAND/1.jpg',
+  ],
+  'project-link':'https://devpost.com/software/wand-hbf0ke',
+  'text-container':{
+    'title':'WAND: Walking Aid Notification Device',
+    'subtitle':'Python (OpenCV, gTTS)',
+    'text':[
+      'A project made to assist people with blindness by using sensors and image '+
+      'analysis. Compiled numerical data from an ultrasound sensor, analyzed images '+
+      'with object detection, and used text to speech technology to output '+
+      'information in an accessible way. Completed a working handheld prototype in '+
+      'a team of four at the 2020 UGA Hackathon and won second place.',
+      'Click the link below to read more about the project.',
+    ],
+  },
+  'links':[
+    {
+      'css':'link white',
+      'href':'https://devpost.com/software/wand-hbf0ke',
+      'external link':true,
+      'icon':{
+        'type':'icon',
+        'css':'icon material-icons',
+        'text':'launch',
+      },
+    },
+  ],
+};
+
+
 export let navData = {
   'primary':{
     'links':[
@@ -79,13 +335,13 @@ export let navData = {
   'secondary':{
     'links':[
       {
-        'css':'link',
+        'css':'link white',
         'href':'mailto:eric6cho@gmail.com',
         'text':'eric6cho@gmail.com',
         'external link':true,
       },
       {
-        'css':'link',
+        'css':'link white',
         'href':'https://www.linkedin.com/in/6cho/',
         'external link':true,
         'icon':{
@@ -96,7 +352,7 @@ export let navData = {
         },
       },
       {
-        'css':'link',
+        'css':'link white',
         'href':'https://github.com/eric6cho',
         'external link':true,
         'icon':{
@@ -131,10 +387,12 @@ export let pageData = {
         {
           'type':'about-section',
           'text-container':[
-            'Hi, my name is Eric Cho and I am an alumni of The University of Georgia with a bachelors in Computer Science. My earliest interaction with any code '+
-            'was in middle school where my friends and I found out how to click "inspect element" and mess around with each other\'s website pages. I thought it '+
+            'my name is Eric Cho and I am an alumni of The University of Georgia with a bachelors in Computer Science. My earliest interaction with any code '+
+            'was in middle school where my friends and I found out how to click "inspect element" and mess around with each other\'s website pages. ',
+            'I thought it '+
             'was just a funny gag to pull, but little did I know, that would set me on a path where I would get the chance to start coding in 2016 during my '+
-            'freshman year of college and continue to learn, not only in the United States, but abroad in Singapore as well. After graduating, finding a niche in '+
+            'freshman year of college and continue to learn, not only in the United States, but abroad in Singapore as well. ',
+            'After graduating, finding a niche in '+
             'the world of tech was pretty straightforward. I grew up in a family of artists, so becoming a developer that focuses on full stack and frontend felt '+
             'like the most natural way to be involved in both tech and visual design.', 
             'As of now, I have had the chance to be a part of amazing teams to create online products and solutions used by businesses across the country, and it '+
@@ -346,222 +604,14 @@ export let pageData = {
         'title':'Projects',
       },
       'subsections':[
-        {
-          'type':'project-section',
-          'images':[
-            'images/Image Mesh/0.png',
-            'images/Image Mesh/1.png',
-            'images/Image Mesh/2.png',
-            'images/Image Mesh/3.png',
-            'images/Image Mesh/4.png',
-            'images/Image Mesh/5.png',
-            'images/Image Mesh/6.png',
-            'images/Image Mesh/7.png',
-          ],
-          'project-link':'https://image-mesh.herokuapp.com/',
-          'text-container':{
-            'title':'Image Mesh',
-            'subtitle':'React, Node.js, JavaScript, SCSS, Heroku',
-            'text':[
-              'A full stack web application that allows users to create pixel art and edited photos. Users can apply filters and generate '+
-              'new photos from images sourced online. Creates a palette based on the colors in the edited photo, and allows users to '+
-              'create unique pixel maps and gradients from the palette.',
-              'Click the links below to view the GitHub repository of the client project and the deployed application.',
-            ],
-          },
-          'links':[
-            {
-              'css':'link white',
-              'href':'https://github.com/eric6cho/image-mesh-react',
-              'external link':true,
-              'icon':{
-                'type':'image',
-                'css':'icon image-icons',
-                'src':'icons/github.png',
-                'alt':'GitHub',
-              },
-            },
-            {
-              'css':'link white',
-              'href':'https://image-mesh.herokuapp.com/',
-              'external link':true,
-              'icon':{
-                'type':'icon',
-                'css':'icon material-icons',
-                'text':'launch',
-              },
-            },
-          ],   
-        },
-        {
-          'type':'project-section',
-          'images':[
-            'images/Spotify Pixelfy/0.png',
-          ],
-          'project-link':'https://spotify-pixelfy.herokuapp.com/',
-          'text-container':{
-            'title':'Pixelfy',
-            'subtitle':'React, Node.js, JavaScript, SCSS, Heroku',
-            'text':[
-              'An ongoing full stack project made to generate a pixel art collection of the top artists of a Spotify listener. '+
-              'Uses the Spotify API and my own Image Mesh API to retrieve artist images and create pixel art versions. ',
-              'Click the links below to view the GitHub and the deployed application.',
-            ],
-          },
-          'links':[
-            {
-              'css':'link white',
-              'href':'https://github.com/eric6cho/spotify-pixelfy',
-              'external link':true,
-              'icon':{
-                'type':'image',
-                'css':'icon image-icons',
-                'src':'icons/github.png',
-                'alt':'GitHub',
-              },
-            },
-            {
-              'css':'link white',
-              'href':'https://spotify-pixelfy.herokuapp.com/',
-              'external link':true,
-              'icon':{
-                'type':'icon',
-                'css':'icon material-icons',
-                'text':'launch',
-              },
-            },
-          ],   
-        },
-        {
-          'type':'project-section',
-          'images':[
-            'images/Remodel Storefront/0.png',
-            'images/Remodel Storefront/1.png',
-            'images/Remodel Storefront/2.png',
-            'images/Remodel Storefront/3.png',
-            'images/Remodel Storefront/4.png',
-            'images/Remodel Storefront/5.png',
-            'images/Remodel Storefront/6.png',
-            'images/Remodel Storefront/7.png',
-            'images/Remodel Storefront/8.png',
-            'images/Remodel Storefront/9.png',
-          ],
-          'project-link':'https://remodel-storefront.herokuapp.com/',
-          'text-container':{
-            'title':'Remodel Storefront',
-            'subtitle':'React, Node.js, JavaScript, SCSS, Heroku',
-            'text':[
-              'A project made to replicate the components and functionalities seen in a '+
-              'ecommerce website with many design languages for single template components. '+
-              'Inspired by working with clients with requirements to implement many '+
-              'different components with similar structures. Built over 30 unique design '+
-              'combinations and visual themes that can be applied to each component template.',
-              'Click the links below to view the GitHub and the deployed application.',
-            ],
-          },
-          'links':[
-            {
-              'css':'link white',
-              'href':'https://github.com/eric6cho/Remodel-Storefront',
-              'external link':true,
-              'icon':{
-                'type':'image',
-                'css':'icon image-icons',
-                'src':'icons/github.png',
-                'alt':'GitHub',
-              },
-            },
-            {
-              'css':'link white',
-              'href':'https://remodel-storefront.herokuapp.com/',
-              'external link':true,
-              'icon':{
-                'type':'icon',
-                'css':'icon material-icons',
-                'text':'launch',
-              },
-            },
-          ],   
-        },
-        {
-          'type':'project-section',
-          'images':[
-            'images/Crypto Price Charts/0.png',
-            'images/Crypto Price Charts/1.png',
-            'images/Crypto Price Charts/2.png',
-            'images/Crypto Price Charts/3.png',
-            'images/Crypto Price Charts/4.png',
-            'images/Crypto Price Charts/5.png',
-          ],
-          'project-link':'https://crypto-price-chart.herokuapp.com/',
-          'text-container':{
-            'title':'Cryptocurrency Price Charts',
-            'subtitle':'React, Node.js, JavaScript, SCSS, Heroku',
-            'text':[
-              'A personal use, full stack data visualization project that gathers data of '+
-              'cryptocurrency assets and the market as a whole. Displays live and historical '+
-              'prices and compiled technical indicators of over 200 cryptocurrency assets, '+
-              'while using the TradingView API to create interactive charts for this data. ',
-              'Click the links below to view the GitHub and the deployed application.',
-            ],
-          },
-          'links':[
-            {
-              'css':'link white',
-              'href':'https://github.com/eric6cho/Crypto-Price-Chart',
-              'external link':true,
-              'icon':{
-                'type':'image',
-                'css':'icon image-icons',
-                'src':'icons/github.png',
-                'alt':'GitHub',
-              },
-            },
-            {
-              'css':'link white',
-              'href':'https://crypto-price-chart.herokuapp.com/',
-              'external link':true,
-              'icon':{
-                'type':'icon',
-                'css':'icon material-icons',
-                'text':'launch',
-              },
-            },
-          ],
-        },
-        {
-          'type':'project-section',
-          'images':[
-            'images/WAND/0.jpg',
-            'images/WAND/1.jpg',
-          ],
-          'project-link':'https://devpost.com/software/wand-hbf0ke',
-          'text-container':{
-            'title':'WAND: Walking Aid Notification Device',
-            'subtitle':'Python (OpenCV, gTTS)',
-            'text':[
-              'A project made to assist people with blindness by using sensors and image '+
-              'analysis. Compiled numerical data from an ultrasound sensor, analyzed images '+
-              'with object detection, and used text to speech technology to output '+
-              'information in an accessible way. Completed a working handheld prototype in '+
-              'a team of four at the 2020 UGA Hackathon and won second place.',
-              'Click the link below to read more about the project.',
-            ],
-          },
-          'links':[
-            {
-              'css':'link white',
-              'href':'https://devpost.com/software/wand-hbf0ke',
-              'external link':true,
-              'icon':{
-                'type':'icon',
-                'css':'icon material-icons',
-                'text':'launch',
-              },
-            },
-          ],
-        },
+        projectSynthetica,
+        projectImageMesh,
+        projectPixelfy,
+        projectRemodel,
+        projectCryptoCharts,
+        projectWand,
       ],
     },
   },
 };
+

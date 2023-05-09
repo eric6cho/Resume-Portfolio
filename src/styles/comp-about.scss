@@ -1,27 +1,50 @@
 @import "mixins/mixins.scss";
 
 .about-section{
-  background: var(--white);
+  background: rgb(30,30,30);
+  border-radius: 15px;
+  overflow: hidden;
   width: 100%;
   display: flex;
   flex-direction: column;
     
   .text-container{
     width:100%;
-    padding:50px 50px 40px;
+    padding:30px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    p{
+      text-align: justify;
+      width:100%;
+      max-width:500px;
+    }
+    h3{
+      margin-bottom: 30px;
+      width:100%;
+      max-width:500px;
+    }
   }
   
   .link-container{
     width:100%;
-    padding-bottom: 25px;
-    background: var(--grey-3);
+    padding: 30px;
+    background: rgb(40,40,40);
     display: flex;
     flex-direction: column;
+    justify-content: center;
+
+    .link-container-content{
+      width:100%;
+      max-width:500px;
+    margin:auto;
+    }
 
     h4{
-      padding: 50px 50px 25px;
-      color:var(--green);
-      margin-bottom: auto;
+      padding: 0px;
+      color: white;
+      margin-bottom: 10px;
+      font-weight: 400;
     }
 
     .link.button{
@@ -32,19 +55,55 @@
 
 @include media-md{
   .about-section{
-    flex-direction: row;
       
     .text-container{
-      padding:50px 50px 40px;
+      padding:60px;
+
     }
     
     .link-container{
-      width:500px;
-      padding-bottom: 50px;
+      width:100%;
+      padding: 60px;
+      background: rgb(40,40,40);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
 
-      h4{
-        padding: 50px;
+      .link-container-content{
+        width:100%;
+        max-width:500px;
+        margin:auto;
+
       }
+  
+      h4{
+        padding: 0px;
+        color: white;
+        margin-bottom: 10px;
+        font-weight: 400;
+      }
+
+      .link.button{
+        width:100%;
+      }
+    }
+  }
+}
+
+
+@include media-xl{
+  .about-section{
+    flex-direction: row;
+     
+    
+    .link-container{
+      width:500px;
+      padding:50px;
+     
+      h4{
+        margin-bottom:30px;
+      }
+
     }
   }
 }

@@ -5,23 +5,26 @@
   flex-direction: column-reverse;
   align-items: center;
   position: relative;
-  width:100%;
+  background: rgb(30,30,30);
+  border-radius: 15px;
+  overflow: hidden;
 
   .image-set-container{
-    width:100%;
-    height: 350px;
+    width:calc(100% + 8px);
+    height: 500px;
     display: flex;
     overflow-y: scroll;
     flex-wrap: wrap;
-    margin-right: 0px;
-    padding:5px;
-    background: var(--white);
+    margin-right: -8px;
+    padding:0px;
+    background: rgb(30,30,30);
 
     .image-wrapper{
-      padding:5px;
-      background: var(--white);
-      height: 340px;
+      padding:0px;
+      background: rgb(30,30,30);
+      height: 500px;
       width:100%;
+      overflow: hidden;
 
       .image-container{
         @include image();
@@ -29,6 +32,29 @@
         width: 100%;
         overflow: hidden;
         position: relative;
+
+        .image-overlay{
+          background: rgba(20,20,20,0.85);
+          position: absolute;
+          height:100%;
+          width:100%;
+          display: flex;
+          overflow: hidden;
+
+
+
+          img{
+
+            position: absolute;
+            height: 365px;
+            width: 650px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            object-fit: cover;
+            border-radius: 10px;
+          }
+        }
       }
     }
   }
@@ -37,7 +63,7 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    background:var(--grey-3);
+    background:rgb(30,30,30);
     
     .link-container{
       margin-top:auto;
@@ -74,7 +100,6 @@
 
       h3,h4,p{
         @include transition();
-        color:var(--white);
         text-decoration: none;
       }
 
@@ -83,20 +108,19 @@
       }
 
       h4{
-        color:var(--green);
       }
 
       p{
-        color:var(--grey-2);
+        color:rgb(150,150,150);
       }
     }
 
     &:hover{
       .text-container{
-        background: var(--green);
+        background:rgb(70,100,225);
 
         h3,h4,p{
-          color:var(--black);
+          color:black;
         }
       }
     }
@@ -145,16 +169,16 @@
 @include media-xl{
   .project-section{
     flex-direction: row;
-    height:550px;
+    height:500px;
 
     .image-set-container{
       height: 100%;
       margin-right: -10px;
-      padding:10px;
+      padding:0px;
 
       .image-wrapper{
-        height: 530px;
-        padding:10px;
+        height: 500px;
+        padding:0px;
       }
     }
       

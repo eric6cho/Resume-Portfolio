@@ -10,15 +10,19 @@ function App() {
     let component = (
       <div className="App">        
         {<Nav data={navData}/>}
-        <div className="overlay">
-          <div className="overlay-border">
-            {<Section data={pageData['sections']['home']}/>}
-            {<Section data={pageData['sections']['about']}/>}
-            {<Section data={pageData['sections']['education']}/>}
-            {<Section data={pageData['sections']['experience']}/>}
-            {<Section data={pageData['sections']['projects']}/>}  
+        <div className="overlay-border">
+          <div className="overlay">
+            
+            <div className="overlay-inner">
+              {<Section data={pageData['sections']['home']}/>}
+              {<Section data={pageData['sections']['about']}/>}
+              {<Section data={pageData['sections']['education']}/>}
+              {<Section data={pageData['sections']['experience']}/>}
+              {<Section data={pageData['sections']['projects']}/>}  
+            </div>
           </div>
         </div>
+
       </div>
     );
 

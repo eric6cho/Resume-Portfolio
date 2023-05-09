@@ -4,9 +4,23 @@
   display:flex;
   flex-direction: column;
   justify-content: center;
-  padding: 30px 10px;
+  margin: auto;
   margin-bottom: 30px;
+  width:calc(100% - 30px);
+  
+  &:first-child{
+    margin-top:0;
+  }
 
+  &:last-child{
+    margin-bottom:0;
+
+    .subsection:last-child{
+      margin-bottom:15px;
+
+    }
+  }
+  
   &:last-child{
     margin-bottom:0;
     padding-bottom: 0;
@@ -16,28 +30,39 @@
     display:flex;
     align-items: center;
     margin-bottom: 30px;
+    width:100%;
+    padding-top: 90px;
   
     .material-icons{
-      margin: 0 10px 0 5px;
-      font-size: 35px;
+      margin: 0 15px 0 5px;
+      font-size: 24px;
+      color:white;
     }
   }
 
+  .section-grid{
+    display:flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+
+    .subsection-container{
+      height:100%;
+      width:calc(100% - 30px);
+      margin: 15px;
+
+    }
+  }
   .subsection{
     @include transition();
-    width:100%;
-    margin-bottom: 30px;
     padding:10px;
-            
-    &:hover{
-      box-shadow: var(--shadow);
-    } 
+    border-radius: 18px;
+      box-shadow: 2px 4px 10px 6px #00000033;
+      
   }
 }
 
 @include media-md{
   .section{
-    padding: 100px 50px;
     margin-bottom: 100px;
   
     .section-header{
@@ -52,9 +77,10 @@
 
 @include media-xl{
   .section{
-    padding: 100px 100px;
-    margin-bottom: 100px;
-  
+    width:calc(100% - 30px);
+    margin: 100px auto;
+
+
     .section-header{
       margin-bottom: 50px;
     }
@@ -67,6 +93,6 @@
 
 @include media-xxl{
   .section{
-    padding: 100px 15%;
+    width:1200px;
   }
 }

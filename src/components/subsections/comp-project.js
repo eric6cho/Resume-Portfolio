@@ -15,6 +15,10 @@ function Project(props) {
             <div key={i} className="image-wrapper">
               <div className="image-container">
                 <img src={image} alt=""></img>
+                <div className="image-overlay">
+                  <img src={image} alt=""></img>
+
+                </div>
               </div>
             </div>
           )}

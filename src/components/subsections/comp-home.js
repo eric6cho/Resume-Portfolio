@@ -1,4 +1,5 @@
 import '../../styles/comp-home.scss';
+import Emblem from '../comp-emblem';
 
 function Home(props) {
 
@@ -8,6 +9,7 @@ function Home(props) {
 
     let component = (
       <div className="home-section">
+        <Emblem/>
         <h1>{data['title']}</h1>
         <div className="description-section">
           {data['description'].map((text,i)=><p key={i}>{text}</p>)}

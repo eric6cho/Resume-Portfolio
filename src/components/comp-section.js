@@ -34,13 +34,20 @@ function Section(props) {
       else if(type==='experience-section') content = <Experience data={subsectionData}/>;
       else if(type==='project-section') content = <Project data={subsectionData}/>;
 
-      return <div key={i} className="subsection">{content}</div>;
+      return (
+        <div className='subsection-container'>
+          <div key={i} className="subsection">{content}</div>
+        </div>
+      );
     });
 
     let component =  
       <div className="section" id={data['id']}>
         {sectionHeader}
-        {subsections}
+        <div className="section-grid">
+            
+          {subsections}
+        </div>
       </div>;
 
     return component;
