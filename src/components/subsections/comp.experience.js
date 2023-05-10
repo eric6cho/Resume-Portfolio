@@ -27,7 +27,7 @@ function Experience(props) {
               let css = project['css']!==undefined?project['css']:'';
               let click = ()=>clickClientProject(project['id']);
               let id = project['id']+'-header';
-              return <p key={i} id={id} className={css} onClick={click}>{project['title']}</p>;
+              return <h3 key={i} id={id} className={css} onClick={click}>{project['title']}</h3>;
             })}
           </div>
           <div className="client-project-list">
@@ -35,7 +35,13 @@ function Experience(props) {
               let css = project['css']!==undefined?project['css']:'';
               let id = project['id']+'-list';
               let responsibilities = project['responsibilities'].map((item,i)=><li key={i}>{item}</li>);
-              return <ul key={i} id={id} className={css}>{responsibilities}</ul>
+              return (
+                <div className={'project-responsibilities '+css} key={i} id={id}>
+                  <h3>{project['title']}</h3>
+                  <ul>{responsibilities}</ul>
+                </div>
+                
+              );
             })}
           </div>
         </div>

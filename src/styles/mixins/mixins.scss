@@ -58,40 +58,26 @@
   h2{
     @include transition();
     font-family: Montserrat, sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
-    letter-spacing: 3px;
+    letter-spacing: 4px;
     line-height: 36px;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
     margin-bottom: 0;
     
-    @include media-md{      
-      font-size: 18px;
-    }
-
-    @include media-xl{
-      font-size: 22px;
-    }
   }   
 
   h3{
     @include transition();
     font-family: Montserrat, sans-serif;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 600;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     line-height: 36px;
     color: rgb(255, 255, 255);
     margin-bottom: 5px;
 
-    @include media-md{      
-      font-size: 22px;
-    }
-
-    @include media-xl{
-      font-size: 26px;
-    }
   }
 
   h4{
@@ -110,7 +96,7 @@
     font-weight: 400;
     letter-spacing: 0px;
     line-height: 18px;
-    color:rgb(180,180,180);
+    color:rgb(210,210,210);
     margin-bottom: 30px;
 
     &:last-child{

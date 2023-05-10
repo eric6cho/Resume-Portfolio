@@ -1,5 +1,6 @@
 import Nav from './components/comp-nav';
 import Section from './components/comp-section';
+import Contents from './components/subsections/comp-contents';
 
 import { pageData,navData } from "./data";
 
@@ -15,6 +16,7 @@ function App() {
             
             <div className="overlay-inner">
               {<Section data={pageData['sections']['home']}/>}
+              {<Section data={pageData['sections']['contents']}/>}
               {<Section data={pageData['sections']['about']}/>}
               {<Section data={pageData['sections']['education']}/>}
               {<Section data={pageData['sections']['experience']}/>}

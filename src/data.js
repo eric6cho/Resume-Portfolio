@@ -377,6 +377,30 @@ export let pageData = {
         'Based in Atlanta, GA',
       ],
     },
+    'contents':{ 
+      
+      'id':'Contents',
+      'header':{
+        'icon':'menu_book',
+        'title':'Contents',
+      },
+      'subsections':[
+        {
+          'type':'contents-section',
+          'data':{ 
+            'About':['Introduction','Contact Links'],
+            'Education':['University of Georgia','National University of Singapore'],
+            'Experience':['Perficient','University of Georgia'],
+            'Projects':['Synthetica','Pixel Memories','Image Mesh','Pixelfy','Remodel Storefront','Crypto Price Charts','WAND'],
+          },
+        
+        },
+      ],
+      
+      
+     
+
+    },
     'about':{
       'id':'About',
       'header':{

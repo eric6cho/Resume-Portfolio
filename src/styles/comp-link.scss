@@ -27,7 +27,7 @@
   }
 
   .link-text{
-    margin: 0 10px;
+    margin: 0px;
   }
 
   &.white{
@@ -61,16 +61,16 @@
 
 
     &:hover{
-      background:#4664e1;
-      color:var(--black);
+      background:rgba(150,170,255,0.2);
+      color:rgb(255,255,255);
       
       .icon{
         &.material-icons{
-          color:var(--black);
+          color:rgb(255,255,255);
         }
   
         &.image-icons{
-          filter: invert(0);
+          filter: invert(99%) sepia(1%) saturate(0%) hue-rotate(195deg) brightness(105%) contrast(100%);
         }
       }
     }
