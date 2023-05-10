@@ -19,7 +19,7 @@ function Home(props) {
   
         <div className="resume-download">
           <a className='resume' href='resume/Eric Cho Resume.pdf'>
-            <h3>Download Resume</h3>
+            <h3>Download Resume</h3> 
           </a>
         </div>
       </div>  
