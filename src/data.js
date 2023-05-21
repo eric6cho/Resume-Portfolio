@@ -300,13 +300,13 @@ export let navData = {
   'primary':{
     'links':[
       {
-        'css':'link white nav-title',
+        'css':'link nav-title',
         'href':'#Home',
         'text':'Eric Cho',
         'external link':false,
       },
       {
-        'css':'link white',
+        'css':'link nav-primary',
         'href':'#Home',
         'text':'Home',
         'external link':false,
@@ -317,7 +317,7 @@ export let navData = {
         },
       },
       {
-        'css':'link white',
+        'css':'link nav-primary',
         'href':'#About',
         'text':'About',
         'external link':false,
@@ -328,7 +328,7 @@ export let navData = {
         },
       },
       {
-        'css':'link white',
+        'css':'link nav-primary',
         'href':'#Education',
         'text':'Education',
         'external link':false,
@@ -339,7 +339,7 @@ export let navData = {
         },
       },
       {
-        'css':'link white',
+        'css':'link nav-primary',
         'href':'#Experience',
         'text':'Experience',
         'external link':false,
@@ -350,7 +350,7 @@ export let navData = {
         },
       },
       {
-        'css':'link white',
+        'css':'link nav-primary',
         'href':'#Projects',
         'text':'Projects',
         'external link':false,
@@ -361,7 +361,7 @@ export let navData = {
         },
       },
       {
-        'css':'link white',
+        'css':'link nav-primary',
         'href':'#About',
         'text':'Resume',
         'external link':false,
@@ -376,13 +376,13 @@ export let navData = {
   'secondary':{
     'links':[
       {
-        'css':'link white',
+        'css':'link nav-secondary',
         'href':'mailto:eric6cho@gmail.com',
         'text':'eric6cho@gmail.com',
         'external link':true,
       },
       {
-        'css':'link white',
+        'css':'link nav-secondary',
         'href':'https://www.linkedin.com/in/6cho/',
         'external link':true,
         'icon':{
@@ -393,7 +393,7 @@ export let navData = {
         },
       },
       {
-        'css':'link white',
+        'css':'link nav-secondary',
         'href':'https://github.com/eric6cho',
         'external link':true,
         'icon':{
@@ -465,7 +465,8 @@ export let pageData = {
             'It continues to be my goal today.',  
           ],
           'link-container':{
-            'header':'I have some links posted below; feel free to check them out.',
+            'header':'Some Links:',
+            'subheader':'I have some links posted below; feel free to check them out.',
             'links':[
               {
                 'css':'link button white contact-link',
@@ -517,7 +518,7 @@ export let pageData = {
         {
           'type':'education-section',
           'title':'University of Georgia',
-          'subtitle':'Aug 2016 - Jul 2020',
+          'subtitle':['Undergraduate Studies','Aug 2016 - Jul 2020'],
           'rows':[
             {
               'title':'Degree',
@@ -536,8 +537,11 @@ export let pageData = {
               'entry':'3.40/4.00',
             },
             {
-              'title':'Scholarships',
-              'entry':'Hope Scholarship, McMullan Study Abroad Scholarship',
+              'title':'Coursework',
+              'entry':
+                'Computer Networks, Data Mining, Data Science, Data Structures, Discrete Mathematics, '+
+                'Linear Algebra, Numerical Simulations, Software Development, Systems Programming, '+
+                'Theory of Computation, Web Programming',
             },
             {
               'title':'Events',
@@ -546,24 +550,21 @@ export let pageData = {
                 '2nd place winner at UGAHacks5 (2020)',
             },
             {
-              'title':'Coursework',
-              'entry':
-                'Computer Networks, Data Mining, Data Science, Data Structures, Discrete Mathematics, '+
-                'Linear Algebra, Numerical Simulations, Software Development, Systems Programming, '+
-                'Theory of Computation, Web Programming',
-            },
-            {
               'title':'Organizations',
               'entry':
                 'Asian American Student Association, Association for Computing Machinery, Vietnamese '+
                 'Student Association, Office of Global Engagement',
+            },
+            {
+              'title':'Scholarships',
+              'entry':'Hope Scholarship, McMullan Study Abroad Scholarship',
             },
           ],
         },
         {
           'type':'education-section',
           'title':'National University of Singapore',
-          'subtitle':'Jan 2019 - May 2019',
+          'subtitle':['Exchange Program','Jan 2019 - May 2019'],
           'rows':[
             {
               'title':'Program',
@@ -604,6 +605,7 @@ export let pageData = {
                 'id':'project-1',
                 'css':'active',
                 'title':'Healthcare Provider Client',
+                'subtitle':'Lead Frontend Developer',
                 'responsibilities':[
                   'Took a role as the lead frontend developer for a site that saw a successful launch.',
                   'Implemented the UI and frontend logic of the main "Find a Doctor/Location" functionality of '+
@@ -614,17 +616,19 @@ export let pageData = {
               },
               {
                 'id':'project-2',
-                'title':'Home Improvement Client ',
+                'title':'Home Renovation Client ',
+                'subtitle':'Frontend Developer',
                 'responsibilities':[
                   'Performed major frontend bugs fixes that were critical to the project\'s completion.',
                   'Worked on various components throughout the site, including the main "Find a Dealer" '+
                   'functionality of the site.',
-                  'Regularly participated in client facing demos.',            
+                  'Regularly participated in client facing demos and acted as a contact point for the development team on the client\'s end.',            
                 ],
               },
               {
                 'id':'project-3',
                 'title':'Healthcare Provider Client',
+                'subtitle':'Frontend Developer',
                 'responsibilities':[
                   'Built and fixed the UI and frontend logic of components found throughout the site.',
                   'Built content pages for patient devices and articles, and tested all components on '+
@@ -635,6 +639,7 @@ export let pageData = {
               {
                 'id':'project-4',
                 'title':'Internal Project',
+                'subtitle':'Full Stack Developer',
                 'responsibilities':[
                   'Built full stack features for an internal site used to guide the training '+
                   'process of new interns.',

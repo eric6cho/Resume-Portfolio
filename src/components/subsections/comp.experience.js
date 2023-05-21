@@ -38,6 +38,7 @@ function Experience(props) {
               return (
                 <div className={'project-responsibilities '+css} key={i} id={id}>
                   <h3>{project['title']}</h3>
+                  <h4>{project['subtitle']}</h4>
                   <ul>{responsibilities}</ul>
                 </div>
                 

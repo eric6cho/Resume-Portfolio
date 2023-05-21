@@ -5,7 +5,7 @@
   flex-direction: column-reverse;
   align-items: center;
   position: relative;
-  background: rgb(30,30,30);
+  background: var(--background-2); // dark grey 2
   border-radius: 15px;
   overflow: hidden;
 
@@ -17,11 +17,11 @@
     flex-wrap: wrap;
     margin-right: -8px;
     padding:0px;
-    background: rgb(30,30,30);
+    background: var(--background-2); // dark grey 2
 
     .image-wrapper{
       padding:0px;
-      background: rgb(30,30,30);
+      background: var(--background-2); // dark grey 2
       height: calc((100vw - 20px)  * 9 / 16);
       width:100%;
       overflow: hidden;
@@ -41,17 +41,9 @@
           display: flex;
           overflow: hidden;
 
-
-
           img{
-
-            position: absolute;
             height: calc((100vw - 20px) * 0.9 * 9 / 16);
             width: calc(90%);
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-            object-fit: cover;
             border-radius: 10px;
           }
         }
@@ -63,7 +55,7 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    background:rgb(30,30,30);
+    background: var(--background-2); // dark grey 2
     
     .link-container{
       margin-top:auto;
@@ -107,20 +99,17 @@
         text-transform: uppercase;
       }
 
-      h4{
-      }
-
       p{
-        color:rgb(150,150,150);
+        color:var(--text-3); // light grey 2
       }
     }
 
     &:hover{
       .text-container{
-        background:rgba(160,170,255,0.2);
+        background: var(--button-2); // transparent blue
 
         h3,h4,p{
-          color:white;
+          color:var(--text-1); // white
         }
       }
     }
@@ -129,7 +118,6 @@
 
 @include media-md{
   .project-section{
-    
     .image-set-container{
       width:calc(100% + 8px);
       height: 500px;
@@ -137,15 +125,10 @@
       .image-wrapper{
         height: 500px;
         width:100%;
-  
+
         .image-container{
-  
           .image-overlay{
-  
-  
-  
             img{
-  
               height: 365px;
               width: 650px;
             }
@@ -157,7 +140,6 @@
     .project-info{
       flex-direction: row-reverse;
 
-
       .link-container{
         margin-top:0;
         padding: 50px 25px;
@@ -168,8 +150,7 @@
           .icon{
             margin-left:0px;
             margin-right: 0px;
-            margin-bottom:25px;
-        
+            margin-bottom:25px;  
           }
         }
       }
@@ -191,7 +172,6 @@
 
     .image-set-container{
       height: 100%;
-  
     }
       
     .project-info{
@@ -206,7 +186,6 @@
           .icon{
             margin-left:25px;
             margin-bottom: 0;
-
           }
         }
       }

@@ -1,15 +1,23 @@
 @mixin themes(){
   :root {
-    --white: rgb(255,255,255);
-    --grey-1:rgb(225, 225, 225);
-    --grey-2: rgb(180,180,180);
-    --grey-3: rgb(50,50,50);
-    --grey-4: rgb(30,30,30);
-    --black: rgb(0,0,0);
-    --green: rgb(30, 220, 180);
-    --green-2: rgb(0, 180, 140);
-    --shadow: 1px 3px 6px 2px #00000044;
-    --transparent: rgba(0,0,0,0);
+    --background-1: rgb(20,20,21); // dark grey 1
+    --background-2: rgb(30,30,31); // dark grey 2
+    --background-3: rgb(35,35,38); // dark grey 3
+
+    --text-1: rgb(255,255,255); // white
+    --text-2: rgb(70,120,255); // blue
+    --text-3: rgb(210,210,210); // light grey 1
+    --text-4: rgb(120,120,120); // light grey 2
+    
+    --button-1: rgba(255,255,255,0.05); // transparent white
+    --button-2: rgba(150,170,255,0.2); // transparent blue
+
+    --image-icon-1:invert(99%) sepia(1%) saturate(0%) hue-rotate(195deg) brightness(105%) contrast(100%); // white
+    --image-icon-2:invert(38%) sepia(78%) saturate(3660%) hue-rotate(219deg) brightness(93%) contrast(90%); // blue
+
+    --border-1: rgb(60,60,60); // gray
+
+    --emblem: rgb(80,80,255);
   }
 }
 
@@ -26,10 +34,9 @@
     background: rgba(255,255,255,0.1);
     
     &:hover {
-    background: rgba(255,255,255,0.2);
+      background: rgba(255,255,255,0.2);
+    }
   }
-  }
-  
 }
 
 @mixin defaultText () {
@@ -37,89 +44,67 @@
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
 
-  h1{
+  h1,h2,h3,h4,p,li{
     @include transition();
-    font-family: Montserrat, sans-serif;
-    font-size: 30px;
-    font-weight: 600;
-    line-height: 63px;
-    letter-spacing: -2px;
-    word-spacing: 5px;
-    color: rgb(255,255,255);
-    text-transform: uppercase;
-    margin-top: 4px;
-
-    @include media-md{      
-      font-size: 50px;
-    }
-
-  }
-
-  h2{
-    @include transition();
-    font-family: Montserrat, sans-serif;
-    font-size: 14px;
-    font-weight: 600;
-    letter-spacing: 4px;
-    line-height: 36px;
-    color: rgb(255, 255, 255);
-    text-transform: uppercase;
-    margin-bottom: 0;
-    
-  }   
-
-  h3{
-    @include transition();
-    font-family: Montserrat, sans-serif;
-    font-size: 14px;
-    font-weight: 600;
-    letter-spacing: 2px;
-    line-height: 36px;
-    color: rgb(255, 255, 255);
-    margin-bottom: 5px;
-
-  }
-
-  h4{
-    @include transition();
-    font-family: 'Courier New', Courier, monospace;
     font-size: 12px;
     font-weight: 600;
     letter-spacing: 0px;
+    line-height: 15px;
+    color: var(--text-1); // white
+    margin-bottom:5px;
+
+  }
+
+  h1,h2,h3{
+    font-family: Montserrat, sans-serif;
+
+  }
+
+  h1{
+    font-size: 30px;
+    line-height: 60px;
+    letter-spacing: -2px;
+    word-spacing: 5px;
+    text-transform: uppercase;
+
+    @include media-md{      
+      font-size: 52px;
+      margin-left: -4px;
+    }
+  }
+
+  h2{
+    font-size: 14px;
+    letter-spacing: 4px;
     line-height: 18px;
-    color:rgb(100,110,255);
+    text-transform: uppercase;
+  }   
+
+  h3{
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 18px;
+  }
+
+  h4{
+    font-family: 'Courier New', Courier, monospace;
+    color: var(--text-2); // blue
     margin-bottom: 20px;
   }
 
   p,li{
-    font-size: 12px;
     font-weight: 400;
-    letter-spacing: 0px;
-    line-height: 18px;
-    color:rgb(210,210,210);
-    margin-bottom: 30px;
+    color: var(--text-3); // light grey
+    margin-bottom: 20px;
 
     &:last-child{
       margin-bottom: 0;
     }
-
   }
-}
-
-@mixin media-xs {
-  @media (max-width: 576px) { @content; }
-}
-
-@mixin media-sm {
-  @media (min-width: 576px) { @content; }
 }
 
 @mixin media-md {
   @media (min-width: 768px) { @content; }
-}
-
-@mixin media-lg {
-  @media (min-width: 992px) { @content; }
 }
 
 @mixin media-xl {
@@ -137,7 +122,7 @@
 @mixin image() {
   img{
     @include transition();
-    background: var(--white);
+    background: var(--background-2);
     position: absolute;
     height: 102%;
     width: 102%;
@@ -148,8 +133,3 @@
     border-radius: 0px;
   }
 }
-
-@mixin blur($blur:5){
-  -webkit-backdrop-filter: blur($blur + unquote("px"));
-  backdrop-filter: blur($blur + unquote("px"));
-};

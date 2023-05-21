@@ -12,7 +12,7 @@ body {
   position: relative;
   margin: 0;
   padding: 0;
-  background: rgba(20,20,20,1);
+  background: var(--background-1);
   height:100%;
   width: 100%;
 
@@ -39,7 +39,7 @@ body {
       .overlay{
         border-radius: 0;
         //border: 2px solid rgb(60,60,60); 
-        background: rgba(20,20,20,1);
+        background: var(--background-1);
         
         padding: 0;
         height:100%;

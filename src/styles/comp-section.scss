@@ -17,7 +17,6 @@
 
     .subsection:last-child{
       margin-bottom:15px;
-
     }
   }
   
@@ -34,11 +33,10 @@
     padding-top: 90px;
     justify-content: center;
 
-  
     .material-icons{
-      margin: 0 15px 0 5px;
+      margin: 0 10px 0 5px;
       font-size: 24px;
-      color:white;
+      color: var(--text-1); // white
     }
   }
 
@@ -81,8 +79,7 @@
   .section{
     width:calc(100% - 30px);
     margin: 100px auto;
-
-  
+    
     .subsection{
       margin-bottom: 50px;
     }

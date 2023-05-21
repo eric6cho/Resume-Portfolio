@@ -15,14 +15,11 @@ function About(props) {
           {data['text-container'].map((text,i)=><p key={i}>{text}</p>)}
         </div>
         <div className="link-container">
-          <div className="link-container-content">
-              
-            <h4>{data['link-container']['header']}</h4>
+            <h3>{data['link-container']['header']}</h3>
+            <h4>{data['link-container']['subheader']}</h4>
             <div className="button-container">
               {data['link-container']['links'].map((linkData,i)=><Link key={i} data={linkData}/>)}
-          
             </div>
-          </div>
          </div>    
       </div>
     );
