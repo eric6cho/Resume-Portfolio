@@ -13,16 +13,12 @@ function Section(props) {
 
     let data = props.data;
 
-
-
     if(data['id']==='Home') 
       return (
         <div className="section" id={data['id']}>
           <Home data={data}/>
         </div>
       );
-
-    
 
     let sectionHeader = 
       <div className="section-header">
@@ -34,8 +30,6 @@ function Section(props) {
       let content;
       let type = subsectionData['type'];
 
-      
-      
       if(type==='contents-section') content = <Contents data={subsectionData}/>;
       else if(type==='about-section') content = <About data={subsectionData}/>;
       else if(type==='education-section') content = <Education data={subsectionData}/>;
@@ -53,7 +47,6 @@ function Section(props) {
       <div className="section" id={data['id']}>
         {sectionHeader}
         <div className="section-grid">
-            
           {subsections}
         </div>
       </div>;

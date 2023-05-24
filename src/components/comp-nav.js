@@ -1,6 +1,4 @@
 import '../styles/comp-nav.scss';
-import Emblem from './comp-emblem';
-
 import Link from "./comp-link";
 
 function Nav(props) {

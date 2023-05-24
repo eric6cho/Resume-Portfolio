@@ -1,6 +1,5 @@
 @import "mixins/mixins.scss";
 
-
 .education-section{
   padding:50px 50px 40px;
   background: var(--background-2); // dark grey 2
@@ -18,16 +17,12 @@
       font-weight: 600;
       color: var(--text-1);
       margin-bottom: 0;
-
-
-
     }
   }
 }
 
 @include media-md{
   .education-section{
-  
     .section-row{
       flex-direction: row;
     }
@@ -35,7 +30,6 @@
 }
 
 @include media-xl{
-    
   #Education{
     .subsection-container{
       width:calc(50% - 30px);

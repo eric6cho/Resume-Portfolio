@@ -1,6 +1,5 @@
 import Nav from './components/comp-nav';
 import Section from './components/comp-section';
-import Contents from './components/subsections/comp-contents';
 
 import { pageData,navData } from "./data";
 

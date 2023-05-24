@@ -1,5 +1,4 @@
 import '../../styles/comp-about.scss';
-
 import Link from "../comp-link";
 
 function About(props) {

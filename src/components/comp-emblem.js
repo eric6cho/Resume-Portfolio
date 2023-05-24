@@ -7,11 +7,8 @@ function Emblem(props) {
     let component = (
         <div className="emblem">
           <div className="center">
-          
             <div className="circle c-1"></div>
             <div className="circle c-2"></div>
-
-
             <div className="line l-1"></div>
             <div className="line l-2"></div>
             <div className="line l-3"></div>
@@ -23,10 +20,7 @@ function Emblem(props) {
             <div className="line l-9"></div>
             <div className="line l-10"></div>
             <div className="line l-11"></div>
-            <div className="line l-12"></div>
-
-
-            
+            <div className="line l-12"></div>   
             <div className="square s-0"></div>
             <div className="square s-1"></div>
             <div className="square s-2"></div>
@@ -38,7 +32,6 @@ function Emblem(props) {
             <div className="square s-8"></div>
             <div className="square s-9"></div>
             <div className="square s-10"></div>
-          
           </div>
         </div>
     );

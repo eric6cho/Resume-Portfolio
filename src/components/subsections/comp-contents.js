@@ -1,5 +1,4 @@
 import '../../styles/comp-contents.scss';
-import Emblem from '../comp-emblem';
 
 function Contents(props) {
 
@@ -14,27 +13,18 @@ function Contents(props) {
 
     let component = (
       <div className="contents-section">
-
-
         {Object.keys(data).map(section=>
           <a href={'#'+section} className='contents-main-section'>
-     
             <div className="contents-section-title-container">
               <div className="contents-section-title">   
                 <h3>{section}</h3>
               </div>
             </div>
-            
             <div className='contents-subsection'>
               {data[section].map(subsection=><p>{subsection}</p>)}
             </div>
-        
           </a>
         )}
-
-
-
-
       </div>  
     );
 
