@@ -28,8 +28,9 @@
     }
   }
 
-  .resume-download{
+  .resume{
     @include transition();
+    text-decoration: none;
     margin:0 auto auto;
     width:250px;
     height: 50px;
@@ -40,18 +41,13 @@
     justify-content: center;
     align-items: center;
 
-    .resume{
-        @include transition();
-        text-decoration: none;
-
-      h3{
-        @include transition();
-        text-transform: capitalize;
-        font-size: 11px;
-        line-height: 11px;
-        margin-bottom: -1px;
-        font-weight: 100;
-      }
+    h3{
+      @include transition();
+      text-transform: capitalize;
+      font-size: 11px;
+      line-height: 11px;
+      margin-bottom: -1px;
+      font-weight: 100;
     }
 
     &:hover{

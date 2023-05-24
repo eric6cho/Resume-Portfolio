@@ -14,7 +14,8 @@ let projectSynthetica = {
     'title':'Synthetica',
     'subtitle':'React, Node.js, JavaScript, SCSS, Heroku, ChatGPT',
     'text':[
-      'A visual literarure series of poems, short stories and experimental pieces written by AI and contained by human design.',
+      'A visual literarure series of poems, short stories and experimental pieces written by AI and presented by human design.',
+      'Ten stories written about AI\'s and people navigating the coexistence in the near future.',
     ],
   },
   'links':[
@@ -102,9 +103,9 @@ let projectImageMesh = {
     'subtitle':'React, Node.js, JavaScript, SCSS, Heroku',
     'text':[
       'A full stack web application that allows users to create pixel art and edited photos. Users can apply filters and generate '+
-      'new photos from images sourced online. Creates a palette based on the colors in the edited photo, and allows users to '+
+      'new photos from images sourced online. ',
+      'Creates a palette based on the colors in the edited photo, and allows users to '+
       'create unique pixel maps and gradients from the palette.',
-      'Click the links below to view the GitHub repository of the client project and the deployed application.',
     ],
   },
   'links':[
@@ -143,9 +144,8 @@ let projectPixelfy =
     'title':'Pixelfy',
     'subtitle':'React, Node.js, JavaScript, SCSS, Heroku',
     'text':[
-      'An ongoing full stack project made to generate a pixel art collection of the top artists of a Spotify listener. '+
+      'An ongoing full stack project made to generate a pixel art collection of the top artists of a Spotify listener. ',
       'Uses the Spotify API and my own Image Mesh API to retrieve artist images and create pixel art versions. ',
-      'Click the links below to view the GitHub and the deployed application.',
     ],
   },
   'links':[
@@ -193,11 +193,11 @@ let projectRemodel = {
     'subtitle':'React, Node.js, JavaScript, SCSS, Heroku',
     'text':[
       'A project made to replicate the components and functionalities seen in a '+
-      'ecommerce website with many design languages for single template components. '+
+      'ecommerce website with many design languages for single template components. ',
       'Inspired by working with clients with requirements to implement many '+
-      'different components with similar structures. Built over 30 unique design '+
+      'different components with similar structures. ',
+      'Built over 30 unique design '+
       'combinations and visual themes that can be applied to each component template.',
-      'Click the links below to view the GitHub and the deployed application.',
     ],
   },
   'links':[
@@ -241,10 +241,10 @@ let projectCryptoCharts =  {
     'subtitle':'React, Node.js, JavaScript, SCSS, Heroku',
     'text':[
       'A personal use, full stack data visualization project that gathers data of '+
-      'cryptocurrency assets and the market as a whole. Displays live and historical '+
+      'cryptocurrency assets and the market as a whole. ',
+      'Displays live and historical '+
       'prices and compiled technical indicators of over 200 cryptocurrency assets, '+
       'while using the TradingView API to create interactive charts for this data. ',
-      'Click the links below to view the GitHub and the deployed application.',
     ],
   },
   'links':[
@@ -274,11 +274,12 @@ let projectWand = {
     'subtitle':'Python (OpenCV, gTTS)',
     'text':[
       'A project made to assist people with blindness by using sensors and image '+
-      'analysis. Compiled numerical data from an ultrasound sensor, analyzed images '+
+      'analysis. ',
+      'Compiled numerical data from an ultrasound sensor, analyzed images '+
       'with object detection, and used text to speech technology to output '+
-      'information in an accessible way. Completed a working handheld prototype in '+
+      'information in an accessible way. ',
+      'Completed a working handheld prototype in '+
       'a team of four at the 2020 UGA Hackathon and won second place.',
-      'Click the link below to read more about the project.',
     ],
   },
   'links':[
@@ -452,8 +453,8 @@ export let pageData = {
         {
           'type':'about-section',
           'text-container':[
-            'my name is Eric Cho and I am an alumni of The University of Georgia with a bachelors in Computer Science. My earliest interaction with any code '+
-            'was in middle school where my friends and I found out how to click "inspect element" and mess around with each other\'s website pages. ',
+            'my name is Eric Cho and I am an alumni from The University of Georgia with a Bachelors degree in Computer Science. My earliest interaction with any code '+
+            'was in middle school where my friends and I found out how to mess around with each other\'s website pages by clicking "Inspect Element". ',
             'I thought it '+
             'was just a funny gag to pull, but little did I know, that would set me on a path where I would get the chance to start coding in 2016 during my '+
             'freshman year of college and continue to learn, not only in the United States, but abroad in Singapore as well. ',
@@ -594,8 +595,8 @@ export let pageData = {
           'responsibilities':[
             'Took on a frontend and full stack developer role on a variety of internal and client '+
             'facing projects.',
-            'Used JavaScript, React, C#, SCSS and Sitecore to build components, services, interfaces, and stylesheets. ',
-            'Provided support to site content authors and other frontend developers.',
+            'Used JavaScript, React, C#, SCSS and Sitecore to build responsive components, services, interfaces, and stylesheets. ',
+            'Provided active support to developers, content authors, UI designers, project managers, and client teams.',
             'Regularly participated in client facing demos.',
           ],
           'client-projects':{
@@ -610,8 +611,8 @@ export let pageData = {
                   'Took a role as the lead frontend developer for a site that saw a successful launch.',
                   'Implemented the UI and frontend logic of the main "Find a Doctor/Location" functionality of '+
                   'the project and various components throughout the site.',
+                  'Provided active support and conducted code reviews for onshore and offshore frontend developers.',
                   'Regularly participated in client facing demos.',
-                  'Provided support to other frontend developers.',
                 ],
               },
               {
@@ -647,6 +648,7 @@ export let pageData = {
                   'participate in company/office initatives.',
                   'Built UI for course content pages, projects page, and admin pages. Provided maintenence '+
                   'to the UI for all parts of the site.',
+                  'Provided support to frontend and backend developers for the site.',
                 ],
               },
             ],

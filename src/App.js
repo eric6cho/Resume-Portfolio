@@ -14,6 +14,8 @@ function App() {
         <div className="overlay-border">
           <div className="overlay">
             
+              <div className="gradient-overlay top"></div>
+              <div className="gradient-overlay bottom"></div>
             <div className="overlay-inner">
               {<Section data={pageData['sections']['home']}/>}
               {<Section data={pageData['sections']['contents']}/>}

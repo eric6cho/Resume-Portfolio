@@ -1,6 +1,7 @@
 @import "mixins/mixins.scss";
 
 .project-section{
+  @include transition();
   display:flex;
   flex-direction: column-reverse;
   align-items: center;
@@ -10,23 +11,32 @@
   overflow: hidden;
 
   .image-set-container{
-    width:calc(100% + 8px);
+    @include transition();
+
+    width:100%;
     height: calc((100vw - 20px)  * 9 / 16);
     display: flex;
     overflow-y: scroll;
     flex-wrap: wrap;
-    margin-right: -8px;
+    //margin-right: -8px;
     padding:0px;
     background: var(--background-2); // dark grey 2
 
+    &::-webkit-scrollbar {
+      width: 0px;
+    }
+
     .image-wrapper{
+      @include transition();
       padding:0px;
       background: var(--background-2); // dark grey 2
       height: calc((100vw - 20px)  * 9 / 16);
       width:100%;
       overflow: hidden;
+      
 
       .image-container{
+        @include transition();
         @include image();
         height: 100%;
         width: 100%;
@@ -34,6 +44,7 @@
         position: relative;
 
         .image-overlay{
+          @include transition();
           background: rgba(20,20,20,0.85);
           position: absolute;
           height:100%;
@@ -42,6 +53,7 @@
           overflow: hidden;
 
           img{
+            @include transition();
             height: calc((100vw - 20px) * 0.9 * 9 / 16);
             width: calc(90%);
             border-radius: 10px;
@@ -52,19 +64,25 @@
   }
 
   .project-info{
+    @include transition();
     height: 100%;
+    width:100%;
+
     display: flex;
     flex-direction: column;
     background: var(--background-2); // dark grey 2
     
     .link-container{
+      @include transition();
       margin-top:auto;
-      padding: 25px 45px;
+      padding: 25px 45px 45px;
       display: flex;
       justify-content: flex-end;
 
       .link{
+        @include transition();
         .icon{
+          @include transition();
           margin-left:25px;
 
           &.image-icons{
@@ -84,10 +102,10 @@
       text-align: right;
       min-width:100%;
       max-width:100%;
-      height: 100%;
+      //height: 100%;
       display: flex;
       flex-direction: column;
-      padding:50px 50px 40px;
+      padding:50px 50px 0;
       text-decoration: none;
 
       h3,h4,p{
@@ -105,8 +123,8 @@
     }
 
     &:hover{
-      .text-container{
         background: var(--button-2); // transparent blue
+      .text-container{
 
         h3,h4,p{
           color:var(--text-1); // white
@@ -119,7 +137,7 @@
 @include media-md{
   .project-section{
     .image-set-container{
-      width:calc(100% + 8px);
+      width:100%;
       height: 500px;
   
       .image-wrapper{
@@ -142,15 +160,15 @@
 
       .link-container{
         margin-top:0;
-        padding: 50px 25px;
+        padding: 25px;
         flex-direction: column;
-        justify-content: flex-start;
+        justify-content: flex-end;
         
         .link{
           .icon{
             margin-left:0px;
             margin-right: 0px;
-            margin-bottom:25px;  
+            margin-top:25px;  
           }
         }
       }
@@ -160,6 +178,7 @@
         text-align: right;
         min-width:calc(100% - 72px);
         max-width:calc(100% - 72px);
+        padding:50px;
       }
     }
   }
@@ -172,15 +191,22 @@
 
     .image-set-container{
       height: 100%;
+    
     }
       
     .project-info{
       flex-direction: column;
-  
+      width:400px;
+      min-width:400px;
+      max-width:400px;
+
+      
+
       .link-container{
         padding:50px 50px;
         justify-content: flex-end;
         flex-direction: row;
+        margin-top: auto;
 
         .link{
           .icon{
@@ -191,9 +217,11 @@
       }
 
       .text-container{
-        min-width:450px;
-        max-width:450px;
+        width:100%;
+        min-width: none;
+        max-width: none;
       }
+
     }
   }
 }

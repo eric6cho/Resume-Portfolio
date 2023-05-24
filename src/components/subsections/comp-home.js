@@ -13,15 +13,10 @@ function Home(props) {
         <h1>{data['title']}</h1>
         <div className="description-section">
           {data['description'].map((text,i)=><p key={i}>{text}</p>)}
-        
-        
         </div>
-  
-        <div className="resume-download">
-          <a className='resume' href='resume/Eric Cho Resume.pdf'>
-            <h3>Download Resume</h3> 
-          </a>
-        </div>
+        <a className='resume' target='_blank' href='resume/Eric Cho Resume.pdf'>
+          <h3>View Resume</h3> 
+        </a>
       </div>  
     );
 

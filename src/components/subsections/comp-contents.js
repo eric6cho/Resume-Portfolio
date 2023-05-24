@@ -17,18 +17,19 @@ function Contents(props) {
 
 
         {Object.keys(data).map(section=>
-          <div className='contents-main-section'>
+          <a href={'#'+section} className='contents-main-section'>
+     
             <div className="contents-section-title-container">
-              <div className="contents-section-title">
-                
-              <a href={'#'+section}><h3>{section}</h3></a>
+              <div className="contents-section-title">   
+                <h3>{section}</h3>
               </div>
             </div>
             
             <div className='contents-subsection'>
               {data[section].map(subsection=><p>{subsection}</p>)}
             </div>
-          </div>
+        
+          </a>
         )}
 
 
