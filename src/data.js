@@ -15,7 +15,7 @@ let projectSynthetica = {
     'subtitle':'React, Node.js, JavaScript, SCSS, Heroku, ChatGPT',
     'text':[
       'A visual literarure series of poems, short stories and experimental pieces written by AI and presented by human design.',
-      'Ten stories written about AI\'s and people navigating the coexistence in the near future.',
+      'Ten stories written about AI\'s and people navigating their coexistence in the near future.',
     ],
   },
   'links':[
