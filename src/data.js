@@ -645,8 +645,8 @@ export let pageData = {
                   'Built full stack features for an internal site used to guide the training '+
                   'process of new interns.',
                   'Built the front and backend of the projects page, which allowed users to create and '+
-                  'participate in company/office initatives.',
-                  'Built UI for course content pages, projects page, and admin pages. Provided maintenence '+
+                  'participate in company/office initiatives.',
+                  'Built UI for course content pages, projects page, and admin pages. Provided maintenance '+
                   'to the UI for all parts of the site.',
                   'Provided support to frontend and backend developers for the site.',
                 ],
