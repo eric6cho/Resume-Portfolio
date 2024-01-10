@@ -1,4 +1,40 @@
 
+let projectXKSite = {
+  'type':'project-section',
+  'images':[
+    'images/XK Site/0.png',
+    'images/XK Site/1.png',
+    'images/XK Site/2.png',
+    'images/XK Site/3.png',
+    'images/XK Site/4.png',
+    'images/XK Site/5.png',
+    'images/XK Site/6.png',
+    'images/XK Site/7.png',
+  ],
+  'project-link':'https://www.ugaxikappa.org/',
+  'text-container':{
+    'title':'Xi Kappa Website',
+    'subtitle':'Weebly CMS, HTML, CSS, JavaScript',
+    'text':[
+      'The official site for the Xi Kappa Asian-Interest Fraternity, Incorporated at the University of Georgia.',
+      'This site is the home for Xi Kappa to host all of their official content, such as school events, recruitment events, social events, fundraisers, philanthropy service, historical information, and information on its members.',
+      'I am currently the one that manages this site, and responsible for managing all content and webpages.',
+    ],
+  },
+  'links':[
+    {
+      'css':'link white',
+      'href':'https://www.ugaxikappa.org/',
+      'external link':true,
+      'icon':{
+        'type':'icon',
+        'css':'icon material-icons',
+        'text':'launch',
+      },
+    },
+  ],   
+};
+
 let projectSynthetica = {
   'type':'project-section',
   'images':[
@@ -433,7 +469,7 @@ export let pageData = {
             'About':['Introduction','Contact Links'],
             'Education':['University of Georgia','National University of Singapore'],
             'Experience':['Perficient','University of Georgia'],
-            'Projects':['Synthetica','Pixel Memories','Image Mesh','Pixelfy','Remodel Storefront','Crypto Price Charts','WAND'],
+            'Projects':['Xi Kappa Website','Synthetica','Pixel Memories','Image Mesh','Pixelfy','Remodel Storefront','Crypto Price Charts','WAND'],
           },
         
         },
@@ -676,6 +712,7 @@ export let pageData = {
         'title':'Projects',
       },
       'subsections':[
+        projectXKSite,
         projectSynthetica,
         projectPixelMemories,
         projectImageMesh,
